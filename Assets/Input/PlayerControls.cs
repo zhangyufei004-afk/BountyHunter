@@ -62,6 +62,15 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Reload"",
+                    ""type"": ""Button"",
+                    ""id"": ""89d82bc1-abb5-4533-a62b-5d199a3dfd8e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -128,6 +137,17 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Drop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9413ebbb-3082-48f8-9048-8bbe348fd358"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reload"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -719,6 +739,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Drop = m_Player.FindAction("Drop", throwIfNotFound: true);
+        m_Player_Reload = m_Player.FindAction("Reload", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -794,6 +815,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Fire;
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Drop;
+    private readonly InputAction m_Player_Reload;
     public struct PlayerActions
     {
         private @PlayerControls m_Wrapper;
@@ -802,6 +824,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @Fire => m_Wrapper.m_Player_Fire;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Drop => m_Wrapper.m_Player_Drop;
+        public InputAction @Reload => m_Wrapper.m_Player_Reload;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -823,6 +846,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Drop.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDrop;
                 @Drop.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDrop;
                 @Drop.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDrop;
+                @Reload.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReload;
+                @Reload.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReload;
+                @Reload.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReload;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -839,6 +865,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Drop.started += instance.OnDrop;
                 @Drop.performed += instance.OnDrop;
                 @Drop.canceled += instance.OnDrop;
+                @Reload.started += instance.OnReload;
+                @Reload.performed += instance.OnReload;
+                @Reload.canceled += instance.OnReload;
             }
         }
     }
@@ -999,6 +1028,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         void OnFire(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnDrop(InputAction.CallbackContext context);
+        void OnReload(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
