@@ -14,6 +14,7 @@ public class Shoot : MonoBehaviour
     public GameObject[] bulletUI;
 
     private int ammo = 8;
+    public int maxAmmo = 8;
 
     public InputActionReference shootReference;
     public InputActionReference reloadReference;
@@ -32,7 +33,12 @@ public class Shoot : MonoBehaviour
 
     void Start()
     {
-        ammo = 8;
+        ammo = maxAmmo;
+        for(int i = 0; i < bulletUI.Length; i++)
+        {
+            bulletUI[i].SetActive(false);
+        }
+        bulletUI[ammo].SetActive(true);
     }
 
     private void ShootBullet(InputAction.CallbackContext context)
@@ -64,7 +70,7 @@ public class Shoot : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         bulletUI[ammo].SetActive(false);
-        ammo = 8;
+        ammo = maxAmmo;
         bulletUI[ammo].SetActive(true);
 
     }
