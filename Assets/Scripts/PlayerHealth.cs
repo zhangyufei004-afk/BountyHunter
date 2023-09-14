@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
     public GameObject[] heartsUI;
     public int health;
     public int maxHealth = 6;
+
+    public GameObject gameOverPanel;
     // Start is called before the first frame update
     public InputActionReference takeDamageReference;
 
@@ -27,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         health = maxHealth;
+        gameOverPanel.SetActive(false);
         for(int i = 0; i < heartsUI.Length; i++)
         {
             heartsUI[i].SetActive(false);
@@ -45,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        throw new NotImplementedException();
+        gameOverPanel.SetActive(true);
     }
 
     public void TakeDamage()

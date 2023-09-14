@@ -16,6 +16,8 @@ public class Shoot : MonoBehaviour
     private int ammo = 8;
     public int maxAmmo = 8;
 
+    private bool isReloading;
+
     public InputActionReference shootReference;
     public InputActionReference reloadReference;
 
@@ -33,6 +35,7 @@ public class Shoot : MonoBehaviour
 
     void Start()
     {
+        isReloading = false;
         ammo = maxAmmo;
         for(int i = 0; i < bulletUI.Length; i++)
         {
@@ -43,7 +46,7 @@ public class Shoot : MonoBehaviour
 
     private void ShootBullet(InputAction.CallbackContext context)
     {
-        if(ammo > 0)
+        if(ammo > 0 && !isReloading)
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             bulletUI[ammo].SetActive(false);
@@ -63,15 +66,22 @@ public class Shoot : MonoBehaviour
 
     private void Reload()
     {
-        StartCoroutine(ReloadTime());
+        if(!isReloading)
+            StartCoroutine(ReloadTime());
     }
 
     IEnumerator ReloadTime()
     {
-        yield return new WaitForSeconds(3);
-        bulletUI[ammo].SetActive(false);
-        ammo = maxAmmo;
-        bulletUI[ammo].SetActive(true);
+        isReloading = true;
+        
+        while(ammo < maxAmmo)
+        {
+            bulletUI[ammo].SetActive(false);
+            ammo++;
+            bulletUI[ammo].SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+        }
 
+        isReloading = false;
     }
 }
