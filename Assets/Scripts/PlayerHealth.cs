@@ -1,18 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public GameObject[] heartsUI;
+    [Header("Variables")]
     public int health;
     public int maxHealth = 6;
 
+    [Header("UI")]
+    public GameObject[] heartsUI;
     public GameObject gameOverPanel;
-    // Start is called before the first frame update
+
+    [Header("Input Actions")]
     public InputActionReference takeDamageReference;
 
     void OnEnable()

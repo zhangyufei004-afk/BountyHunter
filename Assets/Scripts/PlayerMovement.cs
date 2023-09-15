@@ -1,18 +1,19 @@
-using NUnit.Framework;
-using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]private float horizontal;
+    private float horizontal;
     private bool isFacingRight = true;
+    private float count = 0;
 
     [Header("Changable Variables")]
     [SerializeField] private float speed = 8f;
     [SerializeField] private float JumpPower = 16f;
+    [SerializeField] private float maxJumps = 1;
 
     [Header("Attachments")]
+    public GameObject cameraAttachment;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -36,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Flip();
+
+        if(isGrounded())
+        {
+            count = 0;
+        }
     }
 
     private void FixedUpdate()
@@ -43,9 +49,9 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
-    private bool isGrounded()
+    public bool isGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 1f, groundLayer);
     }
 
     private void Flip()
@@ -54,13 +60,15 @@ public class PlayerMovement : MonoBehaviour
         {
             isFacingRight = !isFacingRight;
             transform.Rotate(0f, 180f, 0f);
+            cameraAttachment.transform.Rotate(0f, 180f, 0f);
         }
     }
 
     private void Jump(InputAction.CallbackContext context)
     {
-        if(isGrounded())
+        if(isGrounded() || count <= maxJumps)
         {
+            count++;
             rb.velocity = new Vector2(rb.velocity.x, JumpPower);
         }
     }
@@ -81,6 +89,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(groundCheck.transform.position, 0.2f);
+        Gizmos.DrawWireSphere(groundCheck.transform.position, .2f);
     }
 }

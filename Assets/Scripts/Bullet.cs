@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -18,6 +15,11 @@ public class Bullet : MonoBehaviour
         if(other.gameObject.tag == "Enemy")
         {
             other.gameObject.GetComponent<BaseEnemy>().TakeDamage();
+        }
+        
+        if(other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage();
         }
         
         Destroy(gameObject);

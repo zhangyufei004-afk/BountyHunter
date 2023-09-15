@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BaseEnemy : MonoBehaviour
 {
+    [Header("Variables")]
     public float maxHealth;
     public float currentHealth;
 

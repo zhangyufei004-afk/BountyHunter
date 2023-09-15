@@ -1,23 +1,24 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 
 public class Shoot : MonoBehaviour
 {
+    [Header("Attachments")]
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject bulletPrefab;
 
+    [Header("UI")]
     public GameObject[] bulletUI;
 
+    [Header("Variables")]
     private int ammo = 8;
     public int maxAmmo = 8;
+    public float reloadSpeed = 0.5f;
 
     private bool isReloading;
 
+    [Header("Input Actions")]
     public InputActionReference shootReference;
     public InputActionReference reloadReference;
 
@@ -79,7 +80,7 @@ public class Shoot : MonoBehaviour
             bulletUI[ammo].SetActive(false);
             ammo++;
             bulletUI[ammo].SetActive(true);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(reloadSpeed);
         }
 
         isReloading = false;
