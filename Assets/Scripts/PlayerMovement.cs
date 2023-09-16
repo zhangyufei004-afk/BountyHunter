@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool isGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 1f, groundLayer);
+        return Physics2D.OverlapBox(groundCheck.position, groundCheck.localScale, 0, groundLayer);
     }
 
     private void Flip()
@@ -66,10 +66,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext context)
     {
-        if(isGrounded() || count <= maxJumps)
+        if(count < maxJumps)
         {
-            count++;
             rb.velocity = new Vector2(rb.velocity.x, JumpPower);
+            count++;
+        }
+        else if(isGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, JumpPower);
+            count++;
         }
     }
 
@@ -89,6 +94,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(groundCheck.transform.position, .2f);
+        
     }
 }
