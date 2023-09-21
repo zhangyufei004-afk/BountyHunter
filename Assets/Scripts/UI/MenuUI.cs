@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuUI : MonoBehaviour
 {
+    public Money money;
     public void StartButton()
     {
+        money.MoneyValue = 0;
         SceneManager.LoadScene("Lobby");
     }
 

@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    private Animator animator;
 
     [Header("Input Actions References")]
     [SerializeField] private InputActionReference jumpReference;
@@ -33,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
         jumpReference.action.canceled -= JumpCancelled;
     }
 
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -41,6 +47,13 @@ public class PlayerMovement : MonoBehaviour
         if(isGrounded())
         {
             count = 0;
+            animator.SetBool("isGrounded", true);
+            animator.SetBool("isJumping", false);
+        }
+        else if(!isGrounded())
+        {
+            animator.SetBool("isGrounded", false);
+            animator.SetBool("isJumping", true);
         }
     }
 
@@ -66,12 +79,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext context)
     {
-        if(count < maxJumps)
+        if(isGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, JumpPower);
             count++;
         }
-        else if(isGrounded())
+        else if(count < maxJumps)
         {
             rb.velocity = new Vector2(rb.velocity.x, JumpPower);
             count++;
@@ -88,12 +101,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        horizontal = context.ReadValue<float>();
+        if(context.performed)
+        {
+            animator.SetFloat("isRunning", 0.2f);
+            horizontal = context.ReadValue<float>();
+        }
+        else
+        {
+            animator.SetFloat("isRunning", 0f);
+            horizontal = context.ReadValue<float>();
+        }
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        
+        Gizmos.DrawWireCube(groundCheck.position, groundCheck.localScale);
     }
 }
