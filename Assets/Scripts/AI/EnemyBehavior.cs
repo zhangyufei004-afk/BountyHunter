@@ -14,6 +14,7 @@ public class EnemyBehavior : MonoBehaviour
     public float attackDistance = 1.5f;
     public float attackSpeed = 2f;
     public bool isLongRange = false;
+    public FloatReference enemyDamage;
 
     [Header("Attachments")]
     public GameObject[] points;
@@ -79,7 +80,7 @@ public class EnemyBehavior : MonoBehaviour
     IEnumerator DealDamageMelee()
     {
         justDeltDamage = true;
-        playerManager.player.GetComponent<PlayerHealth>().TakeDamage();
+        playerManager.player.GetComponent<PlayerHealth>().TakeDamage(enemyDamage.Value);
         yield return new WaitForSeconds(attackSpeed);
         justDeltDamage = false;
     }

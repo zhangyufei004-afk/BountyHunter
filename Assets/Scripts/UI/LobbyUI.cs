@@ -5,18 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class LobbyUI : MonoBehaviour
 {
-    public string sceneName;
+    public SceneChange sceneChange;
 
     void Start()
-    {
-        if(sceneName == null)
+    {      
+        if(!sceneChange.LevelCompleted)
         {
-            Debug.LogError(gameObject.name + " has no named scene");
+            gameObject.SetActive(false);
         }
     }
 
-    public void loadLevel()
+    public void LoadLevel()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneChange.SceneName);
     }
 }

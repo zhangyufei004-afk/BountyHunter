@@ -21,9 +21,12 @@ public class BaseEnemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float damage)
     {
-        currentHealth--;
+        for(int i = 0; i < damage; i++)
+        {
+            currentHealth--;
+        }
     }
 
     private void Die()

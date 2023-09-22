@@ -405,6 +405,10 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  enemyDamage:
+    UseConstant: 0
+    ConstantVariable: 0
+    Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -1630,6 +1634,10 @@ MonoBehaviour:
   attackDistance: 1.5
   attackSpeed: 2
   isLongRange: 0
+  enemyDamage:
+    UseConstant: 0
+    ConstantVariable: 0
+    Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
   points:
   - {fileID: 651069973}
   - {fileID: 28699633}
@@ -2740,7 +2748,10 @@ MonoBehaviour:
   - {fileID: 1280624117}
   - {fileID: 1152508592}
   maxAmmo: 8
-  reloadSpeed: 0.5
+  reloadSpeed:
+    UseConstant: 0
+    ConstantVariable: 0
+    Variable: {fileID: 11400000, guid: 837ffb924ebb59d4c9511f5e9bc09ffd, type: 2}
   shootReference: {fileID: -2481517465045418750, guid: 0ad0230a93c870a478dac60aca03b60a, type: 3}
   reloadReference: {fileID: 6506972004352517726, guid: 0ad0230a93c870a478dac60aca03b60a, type: 3}
 --- !u!114 &1791183221
@@ -2755,9 +2766,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ce9e7d77665c345a125c56606bb42c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed:
+    UseConstant: 0
+    ConstantVariable: 0
+    Variable: {fileID: 11400000, guid: 7b2e1eb0e54660e42a5e21248dea2936, type: 2}
   JumpPower: 16
-  maxJumps: 0
+  maxJumps:
+    UseConstant: 0
+    ConstantVariable: 0
+    Variable: {fileID: 11400000, guid: b5f13e0d959861d4ca018428d598be55, type: 2}
   cameraAttachment: {fileID: 290685960}
   rb: {fileID: 1791183223}
   groundCheck: {fileID: 1663737526}
@@ -3442,12 +3459,24 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3181775929164098194, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.9285059
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181775929164098194, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.9285059
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181775929164098194, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9285059
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181775929164098194, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.98
+      value: -5.185
       objectReference: {fileID: 0}
     - target: {fileID: 3181775929164098194, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.19
+      value: -2.2889
       objectReference: {fileID: 0}
     - target: {fileID: 3181775929164098194, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3480,6 +3509,34 @@ PrefabInstance:
     - target: {fileID: 3181775929164098194, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181775929164098195, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_Size.x
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181775929164098195, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181775929164098195, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77c7e0e6fdc75584aa5e9a10d5f86aa0, type: 3}
+    - target: {fileID: 3181775929164098204, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_Radius
+      value: 0.17344667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181775929164098204, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0001786434
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181775929164098204, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0039542005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181775929164098204, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3181775929164098205, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
       propertyPath: m_Name

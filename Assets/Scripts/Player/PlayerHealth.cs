@@ -50,15 +50,18 @@ public class PlayerHealth : MonoBehaviour
         gameOverPanel.SetActive(true);
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float damage)
     {
-        heartsUI[health].SetActive(false);
-        health--;
-        heartsUI[health].SetActive(true);
+        for(int i = 0; i < damage; i++)
+        {
+            heartsUI[health].SetActive(false);
+            health--;
+            heartsUI[health].SetActive(true);
+        }
     }
 
     private void TakeDamageRef(InputAction.CallbackContext context)
     {
-        TakeDamage();
+        TakeDamage(1);
     }
 }

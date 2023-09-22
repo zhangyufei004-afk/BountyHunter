@@ -2,24 +2,26 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 20f;
+    public FloatReference bulletSpeed;
     public Rigidbody2D rb;
+    public FloatReference playerDamage;
+    public FloatReference enemyDamage;
 
     void Start()
     {
-        rb.velocity = transform.right * speed;
+        rb.velocity = transform.right * bulletSpeed.Value;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Enemy")
         {
-            other.gameObject.GetComponent<BaseEnemy>().TakeDamage();
+            other.gameObject.GetComponent<BaseEnemy>().TakeDamage(playerDamage.Value);
         }
         
         if(other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerHealth>().TakeDamage();
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(enemyDamage.Value);
         }
         
         Destroy(gameObject);

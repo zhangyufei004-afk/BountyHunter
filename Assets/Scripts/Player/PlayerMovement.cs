@@ -8,9 +8,9 @@ public class PlayerMovement : MonoBehaviour
     private float count = 0;
 
     [Header("Changable Variables")]
-    [SerializeField] private float speed = 8f;
+    public FloatReference speed;
     [SerializeField] private float JumpPower = 16f;
-    [SerializeField] private float maxJumps = 1;
+    public FloatReference maxJumps;
 
     [Header("Attachments")]
     public GameObject cameraAttachment;
@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        rb.velocity = new Vector2(horizontal * speed.Value, rb.velocity.y);
     }
 
     public bool isGrounded()
@@ -84,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, JumpPower);
             count++;
         }
-        else if(count < maxJumps)
+        else if(count < maxJumps.Value)
         {
             rb.velocity = new Vector2(rb.velocity.x, JumpPower);
             count++;

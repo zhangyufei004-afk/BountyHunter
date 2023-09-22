@@ -14,8 +14,7 @@ public class Shoot : MonoBehaviour
     [Header("Variables")]
     private int ammo = 8;
     public int maxAmmo = 8;
-    public float reloadSpeed = 0.5f;
-
+    public FloatReference reloadSpeed;
     private bool isReloading;
 
     [Header("Input Actions")]
@@ -80,7 +79,7 @@ public class Shoot : MonoBehaviour
             bulletUI[ammo].SetActive(false);
             ammo++;
             bulletUI[ammo].SetActive(true);
-            yield return new WaitForSeconds(reloadSpeed);
+            yield return new WaitForSeconds(reloadSpeed.Value);
         }
 
         isReloading = false;

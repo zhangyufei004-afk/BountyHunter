@@ -136,5 +136,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba751b6ddc9912e4392f284267fc3b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  bulletSpeed:
+    UseConstant: 1
+    ConstantVariable: 0
+    Variable: {fileID: 0}
   rb: {fileID: 8882099484465713198}
+  playerDamage:
+    UseConstant: 0
+    ConstantVariable: 0
+    Variable: {fileID: 11400000, guid: ce3c3913896d6e7498674951f1cbc920, type: 2}
+  enemyDamage:
+    UseConstant: 0
+    ConstantVariable: 0
+    Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
