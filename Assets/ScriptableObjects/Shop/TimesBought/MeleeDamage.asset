@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6afe327bf8a8df849962eca4431fa671, type: 3}
-  m_Name: Money
+  m_Script: {fileID: 11500000, guid: 3298cc3aed8d5dd4abb0a72f93a7f3ce, type: 3}
+  m_Name: MeleeDamage
   m_EditorClassIdentifier: 
-  MoneyValue: 64
+  TimesShopped: 0
