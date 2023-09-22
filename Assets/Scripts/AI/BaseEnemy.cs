@@ -1,3 +1,5 @@
+using System.Threading;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class BaseEnemy : MonoBehaviour
@@ -5,6 +7,7 @@ public class BaseEnemy : MonoBehaviour
     [Header("Variables")]
     public float maxHealth;
     public float currentHealth;
+    public GameObject coins;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,11 @@ public class BaseEnemy : MonoBehaviour
 
     private void Die()
     {
+        int count = UnityEngine.Random.Range(1, 4);
+        for(int i = 0; i < count; i++)
+        {
+            Instantiate(coins, new Vector3(transform.position.x + UnityEngine.Random.Range(-1, 2), gameObject.transform.position.y, 0), Quaternion.identity);
+        }
         Destroy(gameObject);
     }
 }

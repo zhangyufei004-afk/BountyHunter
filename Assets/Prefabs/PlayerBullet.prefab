@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8882099484465713198}
   - component: {fileID: 3298129492264306202}
   - component: {fileID: 7265554377582068123}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,9 +137,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed:
-    UseConstant: 1
+    UseConstant: 0
     ConstantVariable: 0
-    Variable: {fileID: 0}
+    Variable: {fileID: 11400000, guid: d13c65a8ec162fa498faa848cc1b663d, type: 2}
   rb: {fileID: 8882099484465713198}
   playerDamage:
     UseConstant: 0
@@ -148,4 +148,4 @@ MonoBehaviour:
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
-    Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+    Variable: {fileID: 0}
