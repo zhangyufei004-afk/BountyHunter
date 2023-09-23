@@ -13,10 +13,10 @@ TagManager:
   - Water
   - UI
   - Ground
-  - PlayerLayer
-  - EnemyLayer
-  - EnemyWall
-  - 
+  - Coins
+  - Bullet
+  - EnemyBullet
+  - Enemy
   - 
   - 
   - 
