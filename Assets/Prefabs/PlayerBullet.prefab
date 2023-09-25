@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8116915999988627531}
   - component: {fileID: 6240865878699694593}
   - component: {fileID: 8882099484465713198}
-  - component: {fileID: 3298129492264306202}
   - component: {fileID: 7265554377582068123}
+  - component: {fileID: 7150487257465286023}
   m_Layer: 8
   m_Name: PlayerBullet
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5213965994690874903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.88, y: 1.11, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 1308550800, guid: 3fd28720899171f4ca57f48783edb7d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,22 +108,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &3298129492264306202
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5213965994690874903}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &7265554377582068123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,3 +133,19 @@ MonoBehaviour:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 0}
+--- !u!58 &7150487257465286023
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5213965994690874903}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.04
