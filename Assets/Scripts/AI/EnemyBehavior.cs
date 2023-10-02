@@ -59,6 +59,7 @@ public class EnemyBehavior : MonoBehaviour
         
         if(playerDistance <= attackDistance && !justDeltDamage && isLongRange)
         {
+            
             StartCoroutine(DealDamageRanged());
         }
     }
