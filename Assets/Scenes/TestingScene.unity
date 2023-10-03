@@ -406,10 +406,15 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
+  playerDistance: 0
+  oldPos: 0
+  newPos: 0
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -449,7 +454,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!61 &130797701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1762,10 +1767,15 @@ MonoBehaviour:
   attackDistance: 1.5
   attackSpeed: 2
   isLongRange: 0
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
+  playerDistance: 0
+  oldPos: 0
+  newPos: 0
   points:
   - {fileID: 651069973}
   - {fileID: 28699633}
@@ -1895,7 +1905,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077261263}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.57, y: -2.3699996, z: 0}
+  m_LocalPosition: {x: 7.57, y: -1.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2315,7 +2325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547079265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.32, y: -2.37, z: 0}
+  m_LocalPosition: {x: -8.32, y: -1.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
