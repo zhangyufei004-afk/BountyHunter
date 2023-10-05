@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 890ca650fb830d143ba2aeaa8d148c7b
+guid: 2099177953b75ce459bb8dabba127687
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,131 +100,113 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: huxleyRun(body)_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 58
-        height: 55
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec85eb600ac9ec94e9e0dbe5ba8d1156
-      internalID: 1110581227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: huxleyRun(body)_1
+      name: Ryker Idle_0
       rect:
         serializedVersion: 2
         x: 60
         y: 0
-        width: 59
+        width: 60
         height: 55
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7111e139a1570b442b114327b210bea8
-      internalID: 640231976
+      spriteID: c101a0fabd085344eb65aef99e4d7634
+      internalID: -1754921576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: huxleyRun(body)_2
+      name: Ryker Idle_1
       rect:
         serializedVersion: 2
         x: 120
         y: 0
-        width: 59
+        width: 60
         height: 55
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88c4245c0cadf9d46967d18503341b74
-      internalID: 85228086
+      spriteID: daebe54b0be000144a4e59bf149e80a5
+      internalID: -2031991988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: huxleyRun(body)_3
+      name: Ryker Idle_2
       rect:
         serializedVersion: 2
         x: 180
         y: 0
-        width: 59
+        width: 60
         height: 55
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1087a0d9f2c5d844bc2cbe294fa1831
-      internalID: 1652663318
+      spriteID: 75159430acdad3342a73df1c352b734f
+      internalID: -134082160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: huxleyRun(body)_4
+      name: Ryker Idle_3
       rect:
         serializedVersion: 2
         x: 240
         y: 0
-        width: 59
+        width: 60
         height: 55
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f48b20d35290384b9dda68c2876a56f
-      internalID: -2070149052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: huxleyRun(body)_5
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 0
-        width: 59
-        height: 55
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3586fb50e1436ae4992eb914cd20d068
-      internalID: -1283437632
+      spriteID: 56a5f5f93708bb3489b91c0956b23138
+      internalID: 726918895
       vertices: []
       indices: 
       edges: []
@@ -240,12 +222,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      huxleyRun(body)_1: 640231976
-      huxleyRun(body)_5: -1283437632
-      huxleyRun(body)_3: 1652663318
-      huxleyRun(body)_4: -2070149052
-      huxleyRun(body)_2: 85228086
-      huxleyRun(body)_0: 1110581227
+      Ryker Idle_3: 726918895
+      Ryker Idle_1: -2031991988
+      Ryker Idle_0: -1754921576
+      Ryker Idle_2: -134082160
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
