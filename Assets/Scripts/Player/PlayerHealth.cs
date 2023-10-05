@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     [Header("Variables")]
     public int health;
     public int maxHealth = 6;
+    public GameObject spawnpoint;
 
     [Header("UI")]
     public GameObject[] heartsUI;
@@ -63,5 +65,14 @@ public class PlayerHealth : MonoBehaviour
     private void TakeDamageRef(InputAction.CallbackContext context)
     {
         TakeDamage(1);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Barrier")
+        {
+            gameObject.transform.position = spawnpoint.transform.position;
+            TakeDamage(1);
+        }
     }
 }

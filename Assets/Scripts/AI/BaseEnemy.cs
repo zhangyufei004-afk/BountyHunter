@@ -41,4 +41,17 @@ public class BaseEnemy : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
+    private void DieWithoutCoins()
+    {
+        Destroy(gameObject);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Barrier")
+        {
+            DieWithoutCoins();
+        }
+    }
 }

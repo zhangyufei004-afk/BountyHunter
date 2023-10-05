@@ -7,4 +7,5 @@ public class SceneChange : ScriptableObject
 {
     public string SceneName;
     public bool LevelCompleted;
+    public bool LevelActive;
 }

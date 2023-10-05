@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff6077b88621a654181d7aa486148c5c, type: 3}
   m_Name: LevelOne
   m_EditorClassIdentifier: 
-  SceneName: 
-  LevelCompleted: 1
+  SceneName: Level 1 prototype
+  LevelCompleted: 0
+  LevelActive: 1

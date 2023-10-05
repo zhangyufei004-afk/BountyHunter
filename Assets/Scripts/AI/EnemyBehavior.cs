@@ -17,9 +17,9 @@ public class EnemyBehavior : MonoBehaviour
     public bool isFacingRight = true;
     public FloatReference enemyDamage;
     public Animator animator;
-    public float playerDistance;
-    public float oldPos;
-    public float newPos;
+    private float playerDistance;
+    private float oldPos;
+    private float newPos;
 
     [Header("Attachments")]
     public GameObject[] points;
@@ -36,22 +36,35 @@ public class EnemyBehavior : MonoBehaviour
         playerManager = PlayerManager.instance;
     }
 
+    void LateUpdate()
+    {
+        Flip();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        Flip();
 
+        oldPos = transform.position.x;
         playerDistance = Vector2.Distance(playerManager.player.transform.position, transform.position);
         // float pointDistance = Vector2.Distance(activePoint.position, transform.position);
 
         if(playerDistance <= playerMoveDistance && playerDistance > aIStopDistance)
         {
+            animator.SetBool("isAttacking", false);
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(playerManager.player.transform.position.x, transform.position.y), speed * Time.deltaTime);
         }
         else
         {
             if(playerDistance > aIStopDistance)
+            {
+                animator.SetBool("isAttacking", false);
                 transform.position = Vector2.MoveTowards(transform.position, activePoint.position, speed * Time.deltaTime);
+            }
+            else
+            {
+                animator.SetBool("isAttacking", true);
+            }
             
         }
         
@@ -89,8 +102,10 @@ public class EnemyBehavior : MonoBehaviour
     IEnumerator DealDamageMelee()
     {
         justDeltDamage = true;
+        animator.SetTrigger("Attack");
         playerManager.player.GetComponent<PlayerHealth>().TakeDamage(enemyDamage.Value);
         yield return new WaitForSeconds(attackSpeed);
+        animator.ResetTrigger("Attack");
         justDeltDamage = false;
     }
 
@@ -113,14 +128,14 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Flip()
     {
-        StartCoroutine(GetNewPos());
-        oldPos = transform.position.x;
-        if(oldPos > newPos && !isFacingRight)
+        // StartCoroutine(GetNewPos());
+        newPos = transform.position.x;
+        if(oldPos > newPos && isFacingRight)
         {
             isFacingRight = !isFacingRight;
             transform.Rotate(0f, 180f, 0f);
         }
-        else if(oldPos < newPos && isFacingRight)
+        else if(oldPos < newPos && !isFacingRight)
         {
             isFacingRight = !isFacingRight;
             transform.Rotate(0f, 180f, 0f);
@@ -129,8 +144,7 @@ public class EnemyBehavior : MonoBehaviour
 
     IEnumerator GetNewPos()
     {
-        yield return new WaitForSeconds(0.5f);
-        newPos = transform.position.x;
+        yield return new WaitForEndOfFrame();
     }
 
     void OnDrawGizmosSelected()

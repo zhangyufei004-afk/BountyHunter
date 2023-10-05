@@ -9,7 +9,7 @@ public class LobbyUI : MonoBehaviour
 
     void Start()
     {      
-        if(!sceneChange.LevelCompleted)
+        if(!sceneChange.LevelActive)
         {
             gameObject.SetActive(false);
         }

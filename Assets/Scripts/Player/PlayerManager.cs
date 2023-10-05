@@ -10,4 +10,9 @@ public class PlayerManager : MonoBehaviour
     }
 
     public GameObject player;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 }
