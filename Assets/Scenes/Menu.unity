@@ -528,21 +528,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: {fileID: 11400000, guid: 4a3e2aabf70e0634096283db73ffaf26, type: 2}
-  enemyDamage: {fileID: 0}
-  abilityRecharge: {fileID: 0}
-  bulletSpeed: {fileID: 0}
-  maxJumps: {fileID: 0}
-  meleeDamage: {fileID: 0}
-  movementSpeed: {fileID: 0}
-  playerDamage: {fileID: 0}
-  reloadSpeed: {fileID: 0}
-  tbAbilityRecharge: {fileID: 0}
-  tbBulletDamage: {fileID: 0}
-  tbBulletSpeed: {fileID: 0}
-  tbMaxJumps: {fileID: 0}
-  tbMeleeDamage: {fileID: 0}
-  tbMovementSpeed: {fileID: 0}
-  tbRealoadSpeed: {fileID: 0}
+  enemyDamage: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  abilityRecharge: {fileID: 11400000, guid: 717c9bd7441cae44eb039dc7b328e1f3, type: 2}
+  bulletSpeed: {fileID: 11400000, guid: d13c65a8ec162fa498faa848cc1b663d, type: 2}
+  maxJumps: {fileID: 11400000, guid: b5f13e0d959861d4ca018428d598be55, type: 2}
+  meleeDamage: {fileID: 11400000, guid: e0f09e260706bd443bda79fb9ed60360, type: 2}
+  movementSpeed: {fileID: 11400000, guid: 7b2e1eb0e54660e42a5e21248dea2936, type: 2}
+  playerDamage: {fileID: 11400000, guid: ce3c3913896d6e7498674951f1cbc920, type: 2}
+  reloadSpeed: {fileID: 11400000, guid: 837ffb924ebb59d4c9511f5e9bc09ffd, type: 2}
+  tbAbilityRecharge: {fileID: 11400000, guid: e0b071759027fe54eac4e9acd44f46f8, type: 2}
+  tbBulletDamage: {fileID: 11400000, guid: 8e74c20adba7ae543b15af819ad15837, type: 2}
+  tbBulletSpeed: {fileID: 11400000, guid: 661ac396088f36a439597b932d0899fd, type: 2}
+  tbMaxJumps: {fileID: 11400000, guid: 4079dbf1b68f98e47af04a869cc27023, type: 2}
+  tbMeleeDamage: {fileID: 11400000, guid: a25a5eac664a4364f923e6f213741cb4, type: 2}
+  tbMovementSpeed: {fileID: 11400000, guid: d1f67a5ccb9da284e8a9cbecdc8728e9, type: 2}
+  tbRealoadSpeed: {fileID: 11400000, guid: ceaa1b8e0a1ee1d478c9df905c76a97c, type: 2}
 --- !u!1 &724438434
 GameObject:
   m_ObjectHideFlags: 0

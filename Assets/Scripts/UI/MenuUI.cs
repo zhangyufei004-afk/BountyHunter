@@ -15,13 +15,13 @@ public class MenuUI : MonoBehaviour
     public FloatVariable movementSpeed;
     public FloatVariable playerDamage;
     public FloatVariable reloadSpeed;
-    public FloatVariable tbAbilityRecharge;
-    public FloatVariable tbBulletDamage;
-    public FloatVariable tbBulletSpeed;
-    public FloatVariable tbMaxJumps;
-    public FloatVariable tbMeleeDamage;
-    public FloatVariable tbMovementSpeed;
-    public FloatVariable tbRealoadSpeed;
+    public ShopTimesBought tbAbilityRecharge;
+    public ShopTimesBought tbBulletDamage;
+    public ShopTimesBought tbBulletSpeed;
+    public ShopTimesBought tbMaxJumps;
+    public ShopTimesBought tbMeleeDamage;
+    public ShopTimesBought tbMovementSpeed;
+    public ShopTimesBought tbRealoadSpeed;
 
     public void StartButton()
     {
@@ -35,13 +35,13 @@ public class MenuUI : MonoBehaviour
         playerDamage.Value = 1;
         reloadSpeed.Value = 0.5f;
 
-        tbAbilityRecharge.Value = 0;
-        tbBulletDamage.Value = 0;
-        tbBulletSpeed.Value = 0;
-        tbMaxJumps.Value = 1;
-        tbMeleeDamage.Value = 0;
-        tbMovementSpeed.Value = 0;
-        tbRealoadSpeed.Value = 0;
+        tbAbilityRecharge.TimesShopped = 0;
+        tbBulletDamage.TimesShopped = 0;
+        tbBulletSpeed.TimesShopped = 0;
+        tbMaxJumps.TimesShopped = 1;
+        tbMeleeDamage.TimesShopped = 0;
+        tbMovementSpeed.TimesShopped = 0;
+        tbRealoadSpeed.TimesShopped = 0;
         SceneManager.LoadScene("Lobby");
     }
 

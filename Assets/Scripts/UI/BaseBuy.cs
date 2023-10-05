@@ -17,7 +17,7 @@ public class BaseBuy : MonoBehaviour
     private int purchasedLength;
 
     // Start is called before the first frame update
-    void Start()
+    public void OnShopButton()
     {
         for(int i = 0; i < purchasedUI.Length; i++)
         {
