@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67c0d0534fcb7ef4bbaccd497e4163e2
+guid: 3020997e398d08542b6a63b9be951797
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,85 +104,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rangerAim_0
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 0
-        width: 60
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57350e4825353404687c13513fbd4b6d
-      internalID: 543054526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rangerAim_1
+      name: huxleyLeap_0
       rect:
         serializedVersion: 2
         x: 120
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28beca864ebab374daa7c77bd923f3ef
-      internalID: 386648146
+      spriteID: 8a3e2b985da34464fb66287e4893d952
+      internalID: 1110116170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_2
+      name: huxleyLeap_1
       rect:
         serializedVersion: 2
         x: 180
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dde3a1c9b46a1647bbd64d1b0527792
-      internalID: -421376012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rangerAim_3
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 60
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04831b72ed557cd45ae42434545f9985
-      internalID: 1468762242
+      spriteID: 4e232c371f9badb42a80fbd964f9890e
+      internalID: 329639393
       vertices: []
       indices: 
       edges: []
@@ -198,10 +156,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rangerAim_0: 543054526
-      rangerAim_1: 386648146
-      rangerAim_2: -421376012
-      rangerAim_3: 1468762242
+      huxleyLeap_1: 329639393
+      huxleyLeap_0: 1110116170
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67c0d0534fcb7ef4bbaccd497e4163e2
+guid: 8c349cad1af0521429c9a1442e9a0453
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,85 +104,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rangerAim_0
+      name: brawlerMelee(Ryker)_0
       rect:
         serializedVersion: 2
         x: 60
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57350e4825353404687c13513fbd4b6d
-      internalID: 543054526
+      spriteID: a649fa329f9fd784aa5a8d32853c07a8
+      internalID: -495730519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_1
+      name: brawlerMelee(Ryker)_1
       rect:
         serializedVersion: 2
         x: 120
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28beca864ebab374daa7c77bd923f3ef
-      internalID: 386648146
+      spriteID: 478b9eaa75dea18448ba2ad570a4fe93
+      internalID: -726257808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_2
+      name: brawlerMelee(Ryker)_2
       rect:
         serializedVersion: 2
         x: 180
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dde3a1c9b46a1647bbd64d1b0527792
-      internalID: -421376012
+      spriteID: 7dfcab00148601240ba14f6e1316b87b
+      internalID: -1378621349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_3
+      name: brawlerMelee(Ryker)_3
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04831b72ed557cd45ae42434545f9985
-      internalID: 1468762242
+      spriteID: 9fa71dea0424650498640060c2c1301c
+      internalID: 1141569060
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rangerAim_0: 543054526
-      rangerAim_1: 386648146
-      rangerAim_2: -421376012
-      rangerAim_3: 1468762242
+      brawlerMelee(Ryker)_2: -1378621349
+      brawlerMelee(Ryker)_0: -495730519
+      brawlerMelee(Ryker)_3: 1141569060
+      brawlerMelee(Ryker)_1: -726257808
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

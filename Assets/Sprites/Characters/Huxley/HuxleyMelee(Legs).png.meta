@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67c0d0534fcb7ef4bbaccd497e4163e2
+guid: f15f88a91c7fedd43af1c264dde2d524
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,85 +104,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rangerAim_0
+      name: HuxleyMelee(Legs)_0
       rect:
         serializedVersion: 2
         x: 60
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57350e4825353404687c13513fbd4b6d
-      internalID: 543054526
+      spriteID: cc621c9a9b628b447bb429737e258859
+      internalID: 3825273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_1
+      name: HuxleyMelee(Legs)_1
       rect:
         serializedVersion: 2
         x: 120
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28beca864ebab374daa7c77bd923f3ef
-      internalID: 386648146
+      spriteID: 55f20a4295497134f8cb0242f6e4139d
+      internalID: -1997540908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_2
+      name: HuxleyMelee(Legs)_2
       rect:
         serializedVersion: 2
         x: 180
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dde3a1c9b46a1647bbd64d1b0527792
-      internalID: -421376012
+      spriteID: b91e6e4101a39b547841f5ad8b25a226
+      internalID: 1643569548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_3
+      name: HuxleyMelee(Legs)_3
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04831b72ed557cd45ae42434545f9985
-      internalID: 1468762242
+      spriteID: 1364e49336c90b043aed37760517fce5
+      internalID: 329414321
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rangerAim_0: 543054526
-      rangerAim_1: 386648146
-      rangerAim_2: -421376012
-      rangerAim_3: 1468762242
+      HuxleyMelee(Legs)_0: 3825273
+      HuxleyMelee(Legs)_1: -1997540908
+      HuxleyMelee(Legs)_2: 1643569548
+      HuxleyMelee(Legs)_3: 329414321
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -14,7 +14,12 @@ public class EnemyBehavior : MonoBehaviour
     public float attackDistance = 1.5f;
     public float attackSpeed = 2f;
     public bool isLongRange = false;
+    public bool isFacingRight = true;
     public FloatReference enemyDamage;
+    public Animator animator;
+    public float playerDistance;
+    public float oldPos;
+    public float newPos;
 
     [Header("Attachments")]
     public GameObject[] points;
@@ -26,6 +31,7 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
         activePoint = points[count].transform;
         playerManager = PlayerManager.instance;
     }
@@ -33,7 +39,9 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float playerDistance = Vector2.Distance(playerManager.player.transform.position, transform.position);
+        Flip();
+
+        playerDistance = Vector2.Distance(playerManager.player.transform.position, transform.position);
         // float pointDistance = Vector2.Distance(activePoint.position, transform.position);
 
         if(playerDistance <= playerMoveDistance && playerDistance > aIStopDistance)
@@ -59,6 +67,7 @@ public class EnemyBehavior : MonoBehaviour
         
         if(playerDistance <= attackDistance && !justDeltDamage && isLongRange)
         {
+            
             StartCoroutine(DealDamageRanged());
         }
     }
@@ -98,9 +107,31 @@ public class EnemyBehavior : MonoBehaviour
     // {
     //     if(other.gameObject.tag == "EnemyWall")
     //     {
-            
+
     //     }
     // }
+
+    private void Flip()
+    {
+        StartCoroutine(GetNewPos());
+        oldPos = transform.position.x;
+        if(oldPos > newPos && !isFacingRight)
+        {
+            isFacingRight = !isFacingRight;
+            transform.Rotate(0f, 180f, 0f);
+        }
+        else if(oldPos < newPos && isFacingRight)
+        {
+            isFacingRight = !isFacingRight;
+            transform.Rotate(0f, 180f, 0f);
+        }
+    }
+
+    IEnumerator GetNewPos()
+    {
+        yield return new WaitForSeconds(0.5f);
+        newPos = transform.position.x;
+    }
 
     void OnDrawGizmosSelected()
     {

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67c0d0534fcb7ef4bbaccd497e4163e2
+guid: 30d86805df90b584a8e731d4fc820a74
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,85 +104,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rangerAim_0
+      name: brawlerRun(Talon)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4aa05218ddb2804ea7540bdcb5ccb37
+      internalID: -1299983324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlerRun(Talon)_1
       rect:
         serializedVersion: 2
         x: 60
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57350e4825353404687c13513fbd4b6d
-      internalID: 543054526
+      spriteID: eff05e80e2ce28044b9102ce9f97f461
+      internalID: 1121029397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_1
+      name: brawlerRun(Talon)_2
       rect:
         serializedVersion: 2
         x: 120
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28beca864ebab374daa7c77bd923f3ef
-      internalID: 386648146
+      spriteID: 444bdda9332f6b140aa392405470e7af
+      internalID: 920537018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_2
+      name: brawlerRun(Talon)_3
       rect:
         serializedVersion: 2
         x: 180
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dde3a1c9b46a1647bbd64d1b0527792
-      internalID: -421376012
+      spriteID: 5f3adc1334f932a4da55301b0f382106
+      internalID: 595998987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_3
+      name: brawlerRun(Talon)_4
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04831b72ed557cd45ae42434545f9985
-      internalID: 1468762242
+      spriteID: 295a1daac728e5e4da29483148438ede
+      internalID: 976083475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlerRun(Talon)_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 60
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132b06972174d444d9c013b465ded94c
+      internalID: 17735024
       vertices: []
       indices: 
       edges: []
@@ -198,10 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rangerAim_0: 543054526
-      rangerAim_1: 386648146
-      rangerAim_2: -421376012
-      rangerAim_3: 1468762242
+      brawlerRun(Talon)_3: 595998987
+      brawlerRun(Talon)_5: 17735024
+      brawlerRun(Talon)_0: -1299983324
+      brawlerRun(Talon)_2: 920537018
+      brawlerRun(Talon)_1: 1121029397
+      brawlerRun(Talon)_4: 976083475
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

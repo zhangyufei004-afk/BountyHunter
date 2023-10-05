@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67c0d0534fcb7ef4bbaccd497e4163e2
+guid: 890ca650fb830d143ba2aeaa8d148c7b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,85 +104,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rangerAim_0
+      name: huxleyRun(body)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec85eb600ac9ec94e9e0dbe5ba8d1156
+      internalID: 1110581227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huxleyRun(body)_1
       rect:
         serializedVersion: 2
         x: 60
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57350e4825353404687c13513fbd4b6d
-      internalID: 543054526
+      spriteID: 7111e139a1570b442b114327b210bea8
+      internalID: 640231976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_1
+      name: huxleyRun(body)_2
       rect:
         serializedVersion: 2
         x: 120
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28beca864ebab374daa7c77bd923f3ef
-      internalID: 386648146
+      spriteID: 88c4245c0cadf9d46967d18503341b74
+      internalID: 85228086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_2
+      name: huxleyRun(body)_3
       rect:
         serializedVersion: 2
         x: 180
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dde3a1c9b46a1647bbd64d1b0527792
-      internalID: -421376012
+      spriteID: a1087a0d9f2c5d844bc2cbe294fa1831
+      internalID: 1652663318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rangerAim_3
+      name: huxleyRun(body)_4
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04831b72ed557cd45ae42434545f9985
-      internalID: 1468762242
+      spriteID: 2f48b20d35290384b9dda68c2876a56f
+      internalID: -2070149052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huxleyRun(body)_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 60
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3586fb50e1436ae4992eb914cd20d068
+      internalID: -1283437632
       vertices: []
       indices: 
       edges: []
@@ -198,10 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rangerAim_0: 543054526
-      rangerAim_1: 386648146
-      rangerAim_2: -421376012
-      rangerAim_3: 1468762242
+      huxleyRun(body)_1: 640231976
+      huxleyRun(body)_5: -1283437632
+      huxleyRun(body)_3: 1652663318
+      huxleyRun(body)_4: -2070149052
+      huxleyRun(body)_2: 85228086
+      huxleyRun(body)_0: 1110581227
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
