@@ -3728,9 +3728,21 @@ PrefabInstance:
       propertyPath: bulletUI.Array.data[8]
       value: 
       objectReference: {fileID: 1152508592}
+    - target: {fileID: 6477934014159863500, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
+      propertyPath: m_Volume
+      value: 0.759
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477934014159863500, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a63be9c550b35874f855a6e8956bf8e8, type: 3}
+    - target: {fileID: 8226969651718474379, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
+      propertyPath: m_Pitch
+      value: 1.49
+      objectReference: {fileID: 0}
     - target: {fileID: 8226969651718474379, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.243
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
