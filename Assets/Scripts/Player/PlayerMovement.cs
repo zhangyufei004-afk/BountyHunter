@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     private Animator animator;
+    public AudioSource footsteps;
+    public AudioSource jumpSound;
 
     [Header("Input Actions References")]
     [SerializeField] private InputActionReference jumpReference;
@@ -81,11 +83,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if(isGrounded())
         {
+            jumpSound.Play();
             rb.velocity = new Vector2(rb.velocity.x, JumpPower);
             count++;
         }
         else if(count < maxJumps.Value)
         {
+            jumpSound.Play();
             rb.velocity = new Vector2(rb.velocity.x, JumpPower);
             count++;
         }
@@ -103,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(context.performed)
         {
-            animator.SetFloat("isRunning", 0.2f);
+            animator.SetFloat("isRunning", 1f);
             horizontal = context.ReadValue<float>();
         }
         else
@@ -117,5 +121,10 @@ public class PlayerMovement : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(groundCheck.position, groundCheck.localScale);
+    }
+
+    public void PlayFootsteps()
+    {
+        footsteps.Play();
     }
 }
