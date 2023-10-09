@@ -179,10 +179,12 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -373,10 +375,12 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -809,10 +813,12 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -1209,10 +1215,12 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -1891,10 +1899,12 @@ MonoBehaviour:
   attackDistance: 1.5
   attackSpeed: 2
   isLongRange: 0
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 651069973}
   - {fileID: 28699633}
@@ -2241,10 +2251,12 @@ MonoBehaviour:
   attackDistance: 1.5
   attackSpeed: 2
   isLongRange: 0
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 651069973}
   - {fileID: 28699633}
@@ -4725,10 +4737,12 @@ MonoBehaviour:
   attackDistance: 1.5
   attackSpeed: 2
   isLongRange: 0
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 651069973}
   - {fileID: 28699633}
@@ -4789,10 +4803,12 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -7322,10 +7338,12 @@ MonoBehaviour:
   attackDistance: 1.5
   attackSpeed: 2
   isLongRange: 0
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 651069973}
   - {fileID: 28699633}
@@ -7640,10 +7658,12 @@ MonoBehaviour:
   attackDistance: 1.5
   attackSpeed: 2
   isLongRange: 0
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 651069973}
   - {fileID: 28699633}
@@ -8079,10 +8099,12 @@ MonoBehaviour:
   attackDistance: 1.5
   attackSpeed: 2
   isLongRange: 0
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 651069973}
   - {fileID: 28699633}
@@ -8674,10 +8696,12 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -8858,6 +8882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6c8562ef661a14da0ff7dcb7d6ab68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angle: 0
 --- !u!212 &1737940255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9162,6 +9187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 6
+  spawnpoint: {fileID: 0}
   heartsUI:
   - {fileID: 1128450792}
   - {fileID: 807546654}
@@ -9230,6 +9256,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  footsteps: {fileID: 0}
+  jumpSound: {fileID: 0}
   jumpReference: {fileID: 5550684422959931551, guid: 0ad0230a93c870a478dac60aca03b60a, type: 3}
 --- !u!114 &1791183222
 MonoBehaviour:
@@ -9752,10 +9780,12 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -9946,10 +9976,12 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
@@ -10234,10 +10266,12 @@ MonoBehaviour:
   attackDistance: 1.5
   attackSpeed: 2
   isLongRange: 0
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 651069973}
   - {fileID: 28699633}
@@ -10503,10 +10537,12 @@ MonoBehaviour:
   attackDistance: 4.2
   attackSpeed: 2
   isLongRange: 1
+  isFacingRight: 1
   enemyDamage:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  animator: {fileID: 0}
   points:
   - {fileID: 1547079265}
   - {fileID: 1077261263}
