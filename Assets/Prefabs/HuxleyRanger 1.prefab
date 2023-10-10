@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 1446435135236097726}
   - component: {fileID: 5434857557358783880}
   m_Layer: 10
-  m_Name: HuxleyRanger
+  m_Name: HuxleyRanger 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

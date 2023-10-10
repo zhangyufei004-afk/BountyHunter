@@ -1435,6 +1435,7 @@ MonoBehaviour:
   maxHealth: 3
   currentHealth: 0
   coins: {fileID: 7989704420286237754, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
+  hitSound: {fileID: 0}
 --- !u!212 &1018771574
 SpriteRenderer:
   m_ObjectHideFlags: 0

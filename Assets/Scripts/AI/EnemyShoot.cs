@@ -7,6 +7,7 @@ public class EnemyShoot : MonoBehaviour
     [Header("Attachments")]
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private AudioSource shootSound;
 
     [Header("Variables")]
     private int ammo = 8;
@@ -25,6 +26,7 @@ public class EnemyShoot : MonoBehaviour
     {
         if(ammo > 0 && !isReloading)
         {
+            shootSound.Play();
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }
         else

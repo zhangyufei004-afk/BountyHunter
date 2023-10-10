@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Threading;
 using Unity.Mathematics;
 using UnityEngine;
@@ -8,10 +10,13 @@ public class BaseEnemy : MonoBehaviour
     public float maxHealth;
     public float currentHealth;
     public GameObject coins;
+    public AudioSource hitSound;
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         currentHealth = maxHealth;
     }
 
@@ -26,10 +31,19 @@ public class BaseEnemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        StartCoroutine(FlashRed());
+        hitSound.Play();
         for(int i = 0; i < damage; i++)
         {
             currentHealth--;
         }
+    }
+
+    IEnumerator FlashRed()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.3f);
+        spriteRenderer.color = Color.white;
     }
 
     private void Die()

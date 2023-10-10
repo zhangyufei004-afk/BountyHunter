@@ -7,6 +7,8 @@ public class Shoot : MonoBehaviour
     [Header("Attachments")]
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private AudioSource shootSound;
+
 
     [Header("UI")]
     public GameObject[] bulletUI;
@@ -49,6 +51,7 @@ public class Shoot : MonoBehaviour
         if(ammo > 0 && !isReloading)
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            shootSound.Play();
             bulletUI[ammo].SetActive(false);
             ammo--;
             bulletUI[ammo].SetActive(true);

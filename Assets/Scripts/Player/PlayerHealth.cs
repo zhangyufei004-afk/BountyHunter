@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public int maxHealth = 6;
     public GameObject spawnpoint;
+    public AudioSource hurtSound;
 
     [Header("UI")]
     public GameObject[] heartsUI;
@@ -57,6 +58,7 @@ public class PlayerHealth : MonoBehaviour
         for(int i = 0; i < damage; i++)
         {
             heartsUI[health].SetActive(false);
+            hurtSound.Play();
             health--;
             heartsUI[health].SetActive(true);
         }
