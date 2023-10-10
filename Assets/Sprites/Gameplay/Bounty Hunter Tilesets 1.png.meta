@@ -1,0 +1,1970 @@
+fileFormatVersion: 2
+guid: 8a9a653ccb4048d4099f27d3c2a29547
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da31b3b2999df84eb11cea0fc5ef4f1
+      internalID: -1898851685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312304c52630da145a1384c7de17ac03
+      internalID: -1602019255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b438684ba8e51b448bd741bd2d424f7f
+      internalID: 1533247415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a198bf635f5334fb75b0f619773d40
+      internalID: -461463662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8e6b72ee0b5d647ab6bd53b54b64a1
+      internalID: 1572577999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_5
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a1893ea0bbf314ebdc1652a308904f
+      internalID: -705443025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_6
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6ccd4b2cc899144994215d67414644
+      internalID: -1590804088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_7
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666d103f3bdec1d4eb0e429c89b06ac6
+      internalID: 864005891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_8
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b50981bd0f78b545a27ebf557ca537a
+      internalID: -1498964609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_9
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd0ff13c00222342884fa9917a85954
+      internalID: 1590317953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_10
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775b159859083974bb6c586359e6fd73
+      internalID: -181325556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_11
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805c9c403fc6fb44a9855c6eb2748bd5
+      internalID: 695350698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_12
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e32ee938db92cb4198011556e01a59f
+      internalID: -1792307511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12c55de935fe2147857d51b38b95312
+      internalID: 2087303627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbb769b17ee3924bb8e19a883db3a9e
+      internalID: 1844101307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_15
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502ef65c65f98904c8d669ccb6a0397c
+      internalID: -1883967088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_16
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934f289c09f8b564a8cbdb54bb7a2d3e
+      internalID: 1879880452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_17
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50228b62179fcde43b03779c4f44f9db
+      internalID: -2088756461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_18
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 67
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdadad21b36b3264f8eca5bca22f1cbb
+      internalID: -465799631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd842d260f20efa43bddb3d14ae5b33c
+      internalID: 20699447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_20
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b256ca2c3e9456f48b2061e5cbe2777a
+      internalID: -912588120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4f6c03085d64a4989670d1bf3a2400
+      internalID: -1857641316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_22
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794836732eb98aa48a9067e0ade84e3c
+      internalID: -196384989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_23
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39dcb02270efd9442ac16ac3bf591aa5
+      internalID: -2083075695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_24
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576bbefce81aea84da471442d5c28e3d
+      internalID: 1115064603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_25
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 58
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f4e072ce3a4fb49bf10069f90eef9a
+      internalID: 1075183266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_26
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c504fa57971a04e9d927b45aa2b937
+      internalID: -1264942642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_27
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 58
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfee29e0e6395445beb258c20405ff4
+      internalID: 1229486549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_28
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7a44faf1aeddf47bb04612b175948d
+      internalID: 1778619434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_29
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a131b66a989aad745bcfeef63dc0383c
+      internalID: 397133553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_30
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624ec1c50cc82004a822110bacd971a7
+      internalID: -1779179034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_31
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32848584572f4b143bfa11c89abaa75d
+      internalID: -1117262388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_32
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6e18269f2ce7c429189ebc97062112
+      internalID: -755508005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c519b12f43803479e5796df1ce1ed4
+      internalID: 1755067849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_34
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc0637cc222e5542b26923e32ec99f4
+      internalID: -1610556153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_35
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64430ea6b83c4e64389bb05f2e5f4ca4
+      internalID: 1368143032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_36
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1fb5f89857f054fa6a82cc5a052a27
+      internalID: 107728476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_37
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 50
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21c2f2d147beec4cadf44165b0cd61a
+      internalID: 313927962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9dd237dc9b3e44ab9c800cd9a2b3ac
+      internalID: -1170957806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_39
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7f1036b4c6cf3459087f7897b3fbb1
+      internalID: -1947444786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb8123bc446c3645890ba6b8a065436
+      internalID: 324511655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_41
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a18079884f59c44bf6e1fe733bf30f
+      internalID: -377931390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_42
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f38b4dc3ba2ffa40b34e213b6a810db
+      internalID: 150962810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_43
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2878ff86c94ee1f4b96d9d62b5ec537b
+      internalID: 121344778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_44
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 41
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0c1770256a62e4bbca2e4be98de7bd
+      internalID: 1001709669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_45
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac1dbd598b0d534099d066bb3c2e3f2
+      internalID: 2022429306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_46
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 41
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29f922cd20d8514ba5a4f456125b346
+      internalID: -485322734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_47
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282f07e0b64291f4cb031e673777dd09
+      internalID: -576502018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_48
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7a23c9ad4a54845bf64a7a57fa8c3b
+      internalID: 578503135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_49
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b51b3a50780b0a45b8cfaf11674880d
+      internalID: -1791793355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_50
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee7961589fe6994e99d66c7e6802d19
+      internalID: 1237452753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_51
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d3a1cc8fa6d5446a238251bb97068f
+      internalID: 2064574076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_52
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9166b3239adb6634eaaa826618410e9e
+      internalID: 1919334187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_53
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7086504d5d98b3045bae680f2ba1e23c
+      internalID: -2131111915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_54
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b58196099001fe4abbdde65e6999480
+      internalID: -1111148744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_55
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b7fed366bc91148af10f8f0c678f18
+      internalID: 167656576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_56
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 33
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a635b6897cf744782d491c4d3c48cf
+      internalID: -895615556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_57
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 17
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9b3b54d7ec87e41a089d5d69ac9113
+      internalID: -900795039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_58
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7be4b35d7490d941ad5cb7f4cf53c3f
+      internalID: -2028444056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_59
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542754d28868553478202654b9c125f0
+      internalID: 367612113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_60
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a714ac8d0b25324194ac84d43f5803c
+      internalID: -349642207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_61
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcbe20c35d578f4fb4fc9a5f19b2581
+      internalID: -477654271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_62
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dffa663b5ee8d46a2021607f3a9e61
+      internalID: 104415330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_63
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e12450fb7f6d142b11c742b4b46e2f
+      internalID: -1579035328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_64
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526e88997f8600945807631ca8a3e107
+      internalID: -2056129963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_65
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 20
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b552e5f280808784c8b0c0fcb9799284
+      internalID: 1002494432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_66
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167612ef76bdaf14e8fa5cf9ed1623bd
+      internalID: 612948290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_67
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be58501398a40c64fb23c006fd2a0ae2
+      internalID: -580140670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_68
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f4ed9151564134e9989f8fd65312d5
+      internalID: 1836441472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_69
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67f750163398e64f89bf7f9cfb94306
+      internalID: 50994739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_70
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb896d2677565644ac8184801ea87f0
+      internalID: 2000825801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_71
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d1579e5efa8c940b81fea718f38a60
+      internalID: -1230447452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_72
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a554b5ba89f9a7e4ab6563b91531daa8
+      internalID: -1414728311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_73
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6d9f17289d32f45b565a8367168072
+      internalID: 1824870075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_74
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b3da294a353874cb454c50ffc69e71
+      internalID: 2015855904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_75
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd20fe8d2c4f6164f9b93a623c19bd8f
+      internalID: -168466771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_76
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f477c3323149854f921f003a400c498
+      internalID: 939748590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_77
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8911d9985087345949fe3c2c0510c1
+      internalID: -727549033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_78
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7805eabafcf9bf4a9264e6a03170427
+      internalID: -852165788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_79
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c7dbceb848aa54e98e09a4aa211aad
+      internalID: 1118723109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_80
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5cf660b6cda074b9d64b20042033d7
+      internalID: 357959491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_81
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 5
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee90b8cf7f548384984192d93d63d3ef
+      internalID: -1660596025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_82
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 5
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892cc44aeba2d8842a76b541a98a58d7
+      internalID: -846162842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bounty Hunter Tilesets 1_83
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 5
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09b005abcb4cb649b9b579038b6cfd5
+      internalID: 1719876126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bounty Hunter Tilesets 1_82: -846162842
+      Bounty Hunter Tilesets 1_81: -1660596025
+      Bounty Hunter Tilesets 1_23: -2083075695
+      Bounty Hunter Tilesets 1_17: -2088756461
+      Bounty Hunter Tilesets 1_34: -1610556153
+      Bounty Hunter Tilesets 1_49: -1791793355
+      Bounty Hunter Tilesets 1_0: -1898851685
+      Bounty Hunter Tilesets 1_46: -485322734
+      Bounty Hunter Tilesets 1_58: -2028444056
+      Bounty Hunter Tilesets 1_42: 150962810
+      Bounty Hunter Tilesets 1_69: 50994739
+      Bounty Hunter Tilesets 1_32: -755508005
+      Bounty Hunter Tilesets 1_16: 1879880452
+      Bounty Hunter Tilesets 1_31: -1117262388
+      Bounty Hunter Tilesets 1_30: -1779179034
+      Bounty Hunter Tilesets 1_40: 324511655
+      Bounty Hunter Tilesets 1_20: -912588120
+      Bounty Hunter Tilesets 1_27: 1229486549
+      Bounty Hunter Tilesets 1_44: 1001709669
+      Bounty Hunter Tilesets 1_50: 1237452753
+      Bounty Hunter Tilesets 1_62: 104415330
+      Bounty Hunter Tilesets 1_52: 1919334187
+      Bounty Hunter Tilesets 1_19: 20699447
+      Bounty Hunter Tilesets 1_37: 313927962
+      Bounty Hunter Tilesets 1_9: 1590317953
+      Bounty Hunter Tilesets 1_15: -1883967088
+      Bounty Hunter Tilesets 1_11: 695350698
+      Bounty Hunter Tilesets 1_22: -196384989
+      Bounty Hunter Tilesets 1_78: -852165788
+      Bounty Hunter Tilesets 1_57: -900795039
+      Bounty Hunter Tilesets 1_29: 397133553
+      Bounty Hunter Tilesets 1_59: 367612113
+      Bounty Hunter Tilesets 1_75: -168466771
+      Bounty Hunter Tilesets 1_10: -181325556
+      Bounty Hunter Tilesets 1_79: 1118723109
+      Bounty Hunter Tilesets 1_67: -580140670
+      Bounty Hunter Tilesets 1_33: 1755067849
+      Bounty Hunter Tilesets 1_51: 2064574076
+      Bounty Hunter Tilesets 1_38: -1170957806
+      Bounty Hunter Tilesets 1_61: -477654271
+      Bounty Hunter Tilesets 1_2: 1533247415
+      Bounty Hunter Tilesets 1_70: 2000825801
+      Bounty Hunter Tilesets 1_55: 167656576
+      Bounty Hunter Tilesets 1_8: -1498964609
+      Bounty Hunter Tilesets 1_18: -465799631
+      Bounty Hunter Tilesets 1_12: -1792307511
+      Bounty Hunter Tilesets 1_1: -1602019255
+      Bounty Hunter Tilesets 1_13: 2087303627
+      Bounty Hunter Tilesets 1_5: -705443025
+      Bounty Hunter Tilesets 1_76: 939748590
+      Bounty Hunter Tilesets 1_35: 1368143032
+      Bounty Hunter Tilesets 1_41: -377931390
+      Bounty Hunter Tilesets 1_71: -1230447452
+      Bounty Hunter Tilesets 1_73: 1824870075
+      Bounty Hunter Tilesets 1_77: -727549033
+      Bounty Hunter Tilesets 1_56: -895615556
+      Bounty Hunter Tilesets 1_64: -2056129963
+      Bounty Hunter Tilesets 1_3: -461463662
+      Bounty Hunter Tilesets 1_48: 578503135
+      Bounty Hunter Tilesets 1_21: -1857641316
+      Bounty Hunter Tilesets 1_36: 107728476
+      Bounty Hunter Tilesets 1_53: -2131111915
+      Bounty Hunter Tilesets 1_83: 1719876126
+      Bounty Hunter Tilesets 1_80: 357959491
+      Bounty Hunter Tilesets 1_24: 1115064603
+      Bounty Hunter Tilesets 1_26: -1264942642
+      Bounty Hunter Tilesets 1_47: -576502018
+      Bounty Hunter Tilesets 1_39: -1947444786
+      Bounty Hunter Tilesets 1_65: 1002494432
+      Bounty Hunter Tilesets 1_7: 864005891
+      Bounty Hunter Tilesets 1_28: 1778619434
+      Bounty Hunter Tilesets 1_60: -349642207
+      Bounty Hunter Tilesets 1_45: 2022429306
+      Bounty Hunter Tilesets 1_4: 1572577999
+      Bounty Hunter Tilesets 1_74: 2015855904
+      Bounty Hunter Tilesets 1_63: -1579035328
+      Bounty Hunter Tilesets 1_14: 1844101307
+      Bounty Hunter Tilesets 1_25: 1075183266
+      Bounty Hunter Tilesets 1_43: 121344778
+      Bounty Hunter Tilesets 1_54: -1111148744
+      Bounty Hunter Tilesets 1_6: -1590804088
+      Bounty Hunter Tilesets 1_66: 612948290
+      Bounty Hunter Tilesets 1_72: -1414728311
+      Bounty Hunter Tilesets 1_68: 1836441472
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
