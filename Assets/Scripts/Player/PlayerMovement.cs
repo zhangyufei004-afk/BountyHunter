@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource footsteps;
     public AudioSource jumpSound;
 
+    public bool canJump = true;
+    public bool canMove = true;
+
     [Header("Input Actions References")]
     [SerializeField] private InputActionReference jumpReference;
 
@@ -61,7 +64,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed.Value, rb.velocity.y);
+        if(canMove)
+        {
+            rb.velocity = new Vector2(horizontal * speed.Value, rb.velocity.y);
+        }
     }
 
     public bool isGrounded()
@@ -81,17 +87,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext context)
     {
-        if(isGrounded())
+        if(canJump)
         {
-            jumpSound.Play();
-            rb.velocity = new Vector2(rb.velocity.x, JumpPower);
-            count++;
-        }
-        else if(count < maxJumps.Value)
-        {
-            jumpSound.Play();
-            rb.velocity = new Vector2(rb.velocity.x, JumpPower);
-            count++;
+            if(isGrounded())
+            {
+                jumpSound.Play();
+                rb.velocity = new Vector2(rb.velocity.x, JumpPower);
+                count++;
+            }
+            else if(count < maxJumps.Value)
+            {
+                jumpSound.Play();
+                rb.velocity = new Vector2(rb.velocity.x, JumpPower);
+                count++;
+            }
         }
     }
 
@@ -105,15 +114,18 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        if(context.performed)
+        if(canMove)
         {
-            animator.SetFloat("isRunning", 1f);
-            horizontal = context.ReadValue<float>();
-        }
-        else
-        {
-            animator.SetFloat("isRunning", 0f);
-            horizontal = context.ReadValue<float>();
+            if(context.performed)
+            {
+                animator.SetFloat("isRunning", 1f);
+                horizontal = context.ReadValue<float>();
+            }
+            else
+            {
+                animator.SetFloat("isRunning", 0f);
+                horizontal = context.ReadValue<float>();
+            }
         }
     }
 

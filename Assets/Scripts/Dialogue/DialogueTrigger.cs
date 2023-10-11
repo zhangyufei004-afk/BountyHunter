@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     private bool playerInRange;
     [SerializeField] private TextAsset inkJSON;
+    public bool activatedOnce = false;
 
     void Awake()
     {
@@ -19,6 +20,10 @@ public class DialogueTrigger : MonoBehaviour
         if(playerInRange && !DialogueManager.GetInstance().isPlayingDialogue)
         {
             DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+            if(activatedOnce == true)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
     

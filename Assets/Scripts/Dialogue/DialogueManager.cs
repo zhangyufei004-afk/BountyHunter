@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     public bool isPlayingDialogue { get; private set; }
 
     private bool canContinueToNextLine = false;
+    private bool triggeredByObject = false;
 
     private Coroutine displayLineCoroutine;
 
@@ -29,6 +30,9 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
+    private const string MOVEMENT_TAG = "movement";
+    private const string TRIGGER_TAG = "trigger";
+
     
 
     private void Awake()
@@ -62,7 +66,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if(canContinueToNextLine && submitReference.action.triggered)
+        if(canContinueToNextLine && submitReference.action.triggered && !triggeredByObject)
         {
             ContinueStory();
         }
@@ -89,7 +93,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
     }
 
-    private void ContinueStory()
+    public void ContinueStory()
     {
         if(currentStory.canContinue)
         {
@@ -167,6 +171,28 @@ public class DialogueManager : MonoBehaviour
                     break;
                 case LAYOUT_TAG:
                     layoutAnimator.Play(tagValue);
+                    break;
+                case MOVEMENT_TAG:
+                    if(tagValue == "locked")
+                    {
+                        PlayerManager.instance.player.GetComponent<PlayerMovement>().canJump = false;
+                        PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = false;
+                    }
+                    else
+                    {
+                        PlayerManager.instance.player.GetComponent<PlayerMovement>().canJump = true;
+                        PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = true;
+                    }
+                    break;
+                case TRIGGER_TAG:
+                    if(tagValue == "object")
+                    {
+                        triggeredByObject = true;
+                    }
+                    else
+                    {
+                        triggeredByObject = false;
+                    }
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled");

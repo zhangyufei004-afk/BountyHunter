@@ -4,9 +4,9 @@ Sure! You remember how this works? #speaker: Flair #portrait: flair #layout: rig
 Yeah yeah of course, just run me through it again won’t ya? #speaker: Ace #portrait: ace #layout: left
 A bit rusty? Ok here we go… #speaker: Flair #portrait: flair #layout: right
 First you wanna use the <b><color=\#000000>A</color></b> and <b><color=\#000000>D</color></b> keys to move left and right.
-See those coins on the ground? Pick them up to earn money, you’ll be able to start using them soon.
 Ok now use the <b><color=\#000000>W</color></b> Key to jump!
-Ok good work. 
+See those coins on the ground? Pick them up to earn money, you’ll be able to start using them soon.
+Ok good work.
 Now that we are getting closer to your bounty Huxley, his minions are going to start attacking you. 
 <b><color=\#FF0000>Watch out!</color></b>
 If you get hit by an enemy you lose health!
