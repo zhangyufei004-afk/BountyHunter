@@ -23,6 +23,8 @@ public class MenuUI : MonoBehaviour
     public ShopTimesBought tbMovementSpeed;
     public ShopTimesBought tbRealoadSpeed;
 
+    public SceneChange levelOne;
+
     public void StartButton()
     {
         money.MoneyValue = 0;
@@ -42,6 +44,9 @@ public class MenuUI : MonoBehaviour
         tbMeleeDamage.TimesShopped = 0;
         tbMovementSpeed.TimesShopped = 0;
         tbRealoadSpeed.TimesShopped = 0;
+
+        levelOne.LevelActive = true;
+
         SceneManager.LoadScene("Lobby");
     }
 

@@ -9,6 +9,7 @@ public class StatsUpdate : MonoBehaviour
 
     public void OnBuyButton()
     {
-        statToUpdate.Value = statToUpdate.Value + amountToUpdate;
+        statToUpdate.Value += amountToUpdate;
     }
+
 }

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3298cc3aed8d5dd4abb0a72f93a7f3ce, type: 3}
   m_Name: MaxJumps
   m_EditorClassIdentifier: 
-  TimesShopped: 0
+  TimesShopped: 1

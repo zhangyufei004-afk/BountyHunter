@@ -14,4 +14,5 @@ public class Money : ScriptableObject
     {
         MoneyValue = MoneyValue - value;
     }
+
 }

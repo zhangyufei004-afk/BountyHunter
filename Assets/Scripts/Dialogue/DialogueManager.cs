@@ -1,12 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Ink.Runtime;
 using TMPro;
-using UnityEditor.Overlays;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.XR;
 
 public class DialogueManager : MonoBehaviour
 {

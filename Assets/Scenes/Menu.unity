@@ -543,6 +543,7 @@ MonoBehaviour:
   tbMeleeDamage: {fileID: 11400000, guid: a25a5eac664a4364f923e6f213741cb4, type: 2}
   tbMovementSpeed: {fileID: 11400000, guid: d1f67a5ccb9da284e8a9cbecdc8728e9, type: 2}
   tbRealoadSpeed: {fileID: 11400000, guid: ceaa1b8e0a1ee1d478c9df905c76a97c, type: 2}
+  levelOne: {fileID: 11400000, guid: 0746d8da934e6a648916e6ad3687b2c8, type: 2}
 --- !u!1 &724438434
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +762,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1167327641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1167327643}
+  - component: {fileID: 1167327642}
+  m_Layer: 0
+  m_Name: ScriptableManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1167327642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167327641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55bb8cb60e7f0414baedde95746cff23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatVariables:
+  - {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
+  - {fileID: 11400000, guid: 717c9bd7441cae44eb039dc7b328e1f3, type: 2}
+  - {fileID: 11400000, guid: d13c65a8ec162fa498faa848cc1b663d, type: 2}
+  - {fileID: 11400000, guid: b5f13e0d959861d4ca018428d598be55, type: 2}
+  - {fileID: 11400000, guid: e0f09e260706bd443bda79fb9ed60360, type: 2}
+  - {fileID: 11400000, guid: 7b2e1eb0e54660e42a5e21248dea2936, type: 2}
+  - {fileID: 11400000, guid: ce3c3913896d6e7498674951f1cbc920, type: 2}
+  - {fileID: 11400000, guid: 837ffb924ebb59d4c9511f5e9bc09ffd, type: 2}
+  shops:
+  - {fileID: 11400000, guid: e0b071759027fe54eac4e9acd44f46f8, type: 2}
+  - {fileID: 11400000, guid: 8e74c20adba7ae543b15af819ad15837, type: 2}
+  - {fileID: 11400000, guid: 661ac396088f36a439597b932d0899fd, type: 2}
+  - {fileID: 11400000, guid: 4079dbf1b68f98e47af04a869cc27023, type: 2}
+  - {fileID: 11400000, guid: a25a5eac664a4364f923e6f213741cb4, type: 2}
+  - {fileID: 11400000, guid: d1f67a5ccb9da284e8a9cbecdc8728e9, type: 2}
+  - {fileID: 11400000, guid: ceaa1b8e0a1ee1d478c9df905c76a97c, type: 2}
+  money: {fileID: 11400000, guid: 4a3e2aabf70e0634096283db73ffaf26, type: 2}
+  scenes:
+  - {fileID: 11400000, guid: f8bab1ed736d1394792a2c9ff37589fe, type: 2}
+  - {fileID: 11400000, guid: d467ccf9c6521254c9d9c8041c4c7d29, type: 2}
+  - {fileID: 11400000, guid: 0746d8da934e6a648916e6ad3687b2c8, type: 2}
+  - {fileID: 11400000, guid: 05b4104fa45869c4587fd03f74f1df29, type: 2}
+  - {fileID: 11400000, guid: b3593d956e3d5fe4e8846225821ef482, type: 2}
+  - {fileID: 11400000, guid: f9ad640640d7aa64286f31a0d1fa2cca, type: 2}
+--- !u!4 &1167327643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167327641}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5360421, y: -7.5014024, z: 121.22652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1197651956
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,7 +888,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1754921576, guid: 2099177953b75ce459bb8dabba127687, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1121,7 +1191,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: -769768163, guid: 7c3c303d1509b2f4bb5b90a6e2a67c94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
