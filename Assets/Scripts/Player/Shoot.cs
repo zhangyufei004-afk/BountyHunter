@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class Shoot : MonoBehaviour
 {
     [Header("Attachments")]
-    [SerializeField] private Transform firePoint;
+    public GameObject firePoint;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private AudioSource shootSound;
 
@@ -22,6 +22,8 @@ public class Shoot : MonoBehaviour
     [Header("Input Actions")]
     public InputActionReference shootReference;
     public InputActionReference reloadReference;
+
+    public bool canMove = true;
 
     void OnEnable()
     {
@@ -48,17 +50,20 @@ public class Shoot : MonoBehaviour
 
     private void ShootBullet(InputAction.CallbackContext context)
     {
-        if(ammo > 0 && !isReloading)
+        if(canMove)
         {
-            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-            shootSound.Play();
-            bulletUI[ammo].SetActive(false);
-            ammo--;
-            bulletUI[ammo].SetActive(true);
-        }
-        else
-        {
-            Reload();
+            if(ammo > 0 && !isReloading)
+            {
+                Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation);
+                shootSound.Play();
+                bulletUI[ammo].SetActive(false);
+                ammo--;
+                bulletUI[ammo].SetActive(true);
+            }
+            else
+            {
+                Reload();
+            }    
         }
     }
 

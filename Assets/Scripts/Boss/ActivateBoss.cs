@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ActivateBoss : MonoBehaviour
+{
+    public Animator animator;
+    // Start is called before the first frame update
+    void Start()
+    {
+        animator.SetBool("PlayerEnteredArena", false);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            animator.SetBool("PlayerEnteredArena", true);
+        }
+    }
+}

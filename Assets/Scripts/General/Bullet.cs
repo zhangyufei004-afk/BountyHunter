@@ -23,6 +23,11 @@ public class Bullet : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(enemyDamage.Value);
         }
+
+        if(other.gameObject.tag == "Boss")
+        {
+            other.gameObject.GetComponent<BossHealth>().TakeDamage(playerDamage.Value);
+        }
         
         Destroy(gameObject);
     }

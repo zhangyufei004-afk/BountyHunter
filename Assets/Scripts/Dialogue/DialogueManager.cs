@@ -175,23 +175,25 @@ public class DialogueManager : MonoBehaviour
                 case MOVEMENT_TAG:
                     if(tagValue == "locked")
                     {
-                        PlayerManager.instance.player.GetComponent<PlayerMovement>().canJump = false;
                         PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = false;
+                        PlayerManager.instance.player.GetComponent<Shoot>().canMove = false;
                     }
                     else
                     {
-                        PlayerManager.instance.player.GetComponent<PlayerMovement>().canJump = true;
                         PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = true;
+                        PlayerManager.instance.player.GetComponent<Shoot>().canMove = true;
                     }
                     break;
                 case TRIGGER_TAG:
                     if(tagValue == "object")
                     {
                         triggeredByObject = true;
+                        continueIcon.SetActive(false);
                     }
                     else
                     {
                         triggeredByObject = false;
+                        continueIcon.SetActive(true);
                     }
                     break;
                 default:

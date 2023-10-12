@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource footsteps;
     public AudioSource jumpSound;
 
-    public bool canJump = true;
     public bool canMove = true;
 
     [Header("Input Actions References")]
@@ -87,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext context)
     {
-        if(canJump)
+        if(canMove)
         {
             if(isGrounded())
             {

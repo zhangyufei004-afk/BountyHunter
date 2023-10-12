@@ -80,6 +80,15 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Continue"",
+                    ""type"": ""Button"",
+                    ""id"": ""50846a18-691a-42c5-8df0-c39c7437b6af"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -150,17 +159,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""9413ebbb-3082-48f8-9048-8bbe348fd358"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Reload"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
                     ""name"": ""Two Modifiers"",
                     ""id"": ""7a942636-0187-4c8a-b2c9-bd2779f0bb51"",
                     ""path"": ""TwoModifiers"",
@@ -177,7 +175,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/rightCtrl"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""TakeDamageTest"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -188,7 +186,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/leftShift"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""TakeDamageTest"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -199,10 +197,32 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/v"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""TakeDamageTest"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fe33b63f-1385-48f6-b7ec-74aee0805f73"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Continue"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9413ebbb-3082-48f8-9048-8bbe348fd358"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -794,6 +814,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_Player_Drop = m_Player.FindAction("Drop", throwIfNotFound: true);
         m_Player_Reload = m_Player.FindAction("Reload", throwIfNotFound: true);
         m_Player_TakeDamageTest = m_Player.FindAction("TakeDamageTest", throwIfNotFound: true);
+        m_Player_Continue = m_Player.FindAction("Continue", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -871,6 +892,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Drop;
     private readonly InputAction m_Player_Reload;
     private readonly InputAction m_Player_TakeDamageTest;
+    private readonly InputAction m_Player_Continue;
     public struct PlayerActions
     {
         private @PlayerControls m_Wrapper;
@@ -881,6 +903,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @Drop => m_Wrapper.m_Player_Drop;
         public InputAction @Reload => m_Wrapper.m_Player_Reload;
         public InputAction @TakeDamageTest => m_Wrapper.m_Player_TakeDamageTest;
+        public InputAction @Continue => m_Wrapper.m_Player_Continue;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -908,6 +931,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @TakeDamageTest.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTakeDamageTest;
                 @TakeDamageTest.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTakeDamageTest;
                 @TakeDamageTest.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTakeDamageTest;
+                @Continue.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnContinue;
+                @Continue.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnContinue;
+                @Continue.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnContinue;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -930,6 +956,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @TakeDamageTest.started += instance.OnTakeDamageTest;
                 @TakeDamageTest.performed += instance.OnTakeDamageTest;
                 @TakeDamageTest.canceled += instance.OnTakeDamageTest;
+                @Continue.started += instance.OnContinue;
+                @Continue.performed += instance.OnContinue;
+                @Continue.canceled += instance.OnContinue;
             }
         }
     }
@@ -1092,6 +1121,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         void OnDrop(InputAction.CallbackContext context);
         void OnReload(InputAction.CallbackContext context);
         void OnTakeDamageTest(InputAction.CallbackContext context);
+        void OnContinue(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

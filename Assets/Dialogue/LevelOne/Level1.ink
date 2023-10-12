@@ -1,0 +1,3 @@
+Good to see you still kinda got it, even if you’re a bit rusty… #speaker: Flair #portrait: flair #layout: right #movement: unlocked #trigger: object
+Ok whatever Flair, just get me through this fortress please… #speaker: Ace #portrait: ace #layout: left
+Ok ok… Huxley should be close by, just keep making your way through the compound. Good luck! #speaker: Flair #portrait: flair #layout: right #trigger: player

@@ -55,11 +55,19 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        hurtSound.Play();
         for(int i = 0; i < damage; i++)
         {
+            if(health < 0)
+            {
+                break;
+            }
             heartsUI[health].SetActive(false);
-            hurtSound.Play();
             health--;
+            if(health < 0)
+            {
+                break;
+            }
             heartsUI[health].SetActive(true);
         }
     }
