@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  playerMoveDistance: 5
+  playerMoveDistance: 7
   aIStopDistance: 1.5
   attackDistance: 1.5
   attackSpeed: 2
