@@ -27,6 +27,7 @@ public class EnemyBehavior : MonoBehaviour
     private int count = 0;
 
     private bool justDeltDamage = false; 
+    public float dis;
 
     // Start is called before the first frame update
     void Start()
@@ -67,8 +68,8 @@ public class EnemyBehavior : MonoBehaviour
             }
             
         }
-        
-        if(Vector2.Distance(activePoint.position, transform.position) <= 0)
+        dis = Vector2.Distance(activePoint.position, transform.position);
+        if(Vector2.Distance(activePoint.position, transform.position) <= 0.1)
         {
             ChangeActivePoint();
         }

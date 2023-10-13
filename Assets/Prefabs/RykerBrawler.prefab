@@ -176,7 +176,7 @@ MonoBehaviour:
     UseConstant: 0
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
-  animator: {fileID: 0}
+  animator: {fileID: 5445914143699964427}
   points:
   - {fileID: 0}
   - {fileID: 0}

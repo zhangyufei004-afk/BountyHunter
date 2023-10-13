@@ -6102,11 +6102,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 3204857873223043403, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
   m_PrefabInstance: {fileID: 2142309121}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1289083122 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3204857873109842908, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
-  m_PrefabInstance: {fileID: 2142309121}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1324054676
 GameObject:
   m_ObjectHideFlags: 0
@@ -268596,14 +268591,6 @@ PrefabInstance:
     - target: {fileID: 3204857871550463033, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3204857871550463039, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 1289083122}
-    - target: {fileID: 3204857871550463039, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
-      propertyPath: bulletUI.Array.size
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3204857871550463039, guid: 4a1dafa4b064ecc4091d732f5d41479e, type: 3}
       propertyPath: bulletUI.Array.data[0]

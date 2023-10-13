@@ -410,6 +410,7 @@ MonoBehaviour:
     m_Bits: 64
   footsteps: {fileID: 6477934014159863500}
   jumpSound: {fileID: 8226969651718474379}
+  canMove: 1
   jumpReference: {fileID: 5550684422959931551, guid: 0ad0230a93c870a478dac60aca03b60a, type: 3}
 --- !u!114 &3204857871550463039
 MonoBehaviour:
@@ -423,7 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef181aa914281440b36c321c980e3dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 3204857873109842899}
+  firePoint: {fileID: 3204857873109842908}
   bulletPrefab: {fileID: 5213965994690874903, guid: a1f25521f1e21de46898150a1d8d767e, type: 3}
   shootSound: {fileID: 760542106472739695}
   bulletUI:
@@ -443,6 +444,7 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: 837ffb924ebb59d4c9511f5e9bc09ffd, type: 2}
   shootReference: {fileID: -2481517465045418750, guid: 0ad0230a93c870a478dac60aca03b60a, type: 3}
   reloadReference: {fileID: 6506972004352517726, guid: 0ad0230a93c870a478dac60aca03b60a, type: 3}
+  canMove: 1
 --- !u!114 &3204857871550463032
 MonoBehaviour:
   m_ObjectHideFlags: 0
