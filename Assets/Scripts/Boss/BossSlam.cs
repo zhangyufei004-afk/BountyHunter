@@ -15,8 +15,8 @@ public class BossSlam : StateMachineBehaviour
         boss = animator.gameObject;
         GameObject shockLeft = Instantiate(shockWavePrefab, new Vector3(boss.transform.position.x + 0.4f, boss.transform.position.y - .15f, 0), quaternion.identity);
         GameObject shockRight = Instantiate(shockWavePrefab, new Vector3(boss.transform.position.x - 0.4f, boss.transform.position.y - .15f, 0), quaternion.identity);
-        shockLeft.GetComponent<ShockWave>().bulletSpeed = shockSpeed;
-        shockRight.GetComponent<ShockWave>().bulletSpeed = shockSpeed;
+        shockLeft.GetComponent<ShockWave>().bulletSpeed = -shockSpeed;
+        shockRight.GetComponent<ShockWave>().bulletSpeed = -shockSpeed;
         shockLeft.transform.Rotate(0, 180, 0);
     }
 
