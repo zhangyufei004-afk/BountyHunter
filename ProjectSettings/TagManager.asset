@@ -9,6 +9,7 @@ TagManager:
   - Boss
   - Ground
   - Ryker
+  - Talon
   layers:
   - Default
   - TransparentFX

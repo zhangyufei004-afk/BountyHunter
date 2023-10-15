@@ -18,6 +18,7 @@ public class EnemyBehavior : MonoBehaviour
     public FloatReference enemyDamage;
     public Animator animator;
     public bool isBossBattle = false;
+    public bool isTalonEnemy = false;
     private float playerDistance;
     private float oldPos;
     private float newPos;

@@ -12,12 +12,16 @@ public class BaseEnemy : MonoBehaviour
     public GameObject coins;
     public AudioSource hitSound;
     private SpriteRenderer spriteRenderer;
+    private bool isBossEnemy = false;
+    private bool isTalonEnemy = false;
 
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         currentHealth = maxHealth;
+        isBossEnemy = gameObject.GetComponent<EnemyBehavior>().isBossBattle;
+        isBossEnemy = gameObject.GetComponent<EnemyBehavior>().isTalonEnemy;
     }
 
     // Update is called once per frame
@@ -48,6 +52,10 @@ public class BaseEnemy : MonoBehaviour
 
     private void Die()
     {
+        if(isBossEnemy && isTalonEnemy)
+        {
+            GameObject.FindWithTag("Talon").GetComponent<Animator>().GetBehaviour<TalonFloating>().enemiesKilled -= 1;
+        }
         int count = UnityEngine.Random.Range(1, 4);
         for(int i = 0; i < count; i++)
         {
@@ -58,6 +66,10 @@ public class BaseEnemy : MonoBehaviour
 
     private void DieWithoutCoins()
     {
+        if(isBossEnemy && isTalonEnemy)
+        {
+            GameObject.FindWithTag("Talon").GetComponent<Animator>().GetBehaviour<TalonFloating>().enemiesKilled -= 1;
+        }
         Destroy(gameObject);
     }
 
