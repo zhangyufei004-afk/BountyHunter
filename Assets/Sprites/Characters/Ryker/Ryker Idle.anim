@@ -29,8 +29,10 @@ AnimationClip:
       value: {fileID: 726918895, guid: 2099177953b75ce459bb8dabba127687, type: 3}
     - time: 0.73333335
       value: {fileID: -1754921576, guid: 2099177953b75ce459bb8dabba127687, type: 3}
+    - time: 1
+      value: {fileID: -1754921576, guid: 2099177953b75ce459bb8dabba127687, type: 3}
     attribute: m_Sprite
-    path: 
+    path: ryker(body)
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -41,7 +43,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 1653012772
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -53,12 +55,13 @@ AnimationClip:
     - {fileID: -134082160, guid: 2099177953b75ce459bb8dabba127687, type: 3}
     - {fileID: 726918895, guid: 2099177953b75ce459bb8dabba127687, type: 3}
     - {fileID: -1754921576, guid: 2099177953b75ce459bb8dabba127687, type: 3}
+    - {fileID: -1754921576, guid: 2099177953b75ce459bb8dabba127687, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 1.0166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
