@@ -17,6 +17,7 @@ public class EnemyBehavior : MonoBehaviour
     public bool isFacingRight = true;
     public FloatReference enemyDamage;
     public Animator animator;
+    public bool isBossBattle = false;
     private float playerDistance;
     private float oldPos;
     private float newPos;
@@ -27,13 +28,15 @@ public class EnemyBehavior : MonoBehaviour
     private int count = 0;
 
     private bool justDeltDamage = false; 
-    public float dis;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
-        activePoint = points[count].transform;
+        if(!isBossBattle)
+        {
+            activePoint = points[count].transform;
+        }
         playerManager = PlayerManager.instance;
     }
 
@@ -49,29 +52,35 @@ public class EnemyBehavior : MonoBehaviour
         oldPos = transform.position.x;
         playerDistance = Vector2.Distance(playerManager.player.transform.position, transform.position);
         // float pointDistance = Vector2.Distance(activePoint.position, transform.position);
-
-        if(playerDistance <= playerMoveDistance && playerDistance > aIStopDistance)
+        if(isBossBattle)
         {
-            animator.SetBool("isAttacking", false);
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(playerManager.player.transform.position.x, transform.position.y), speed * Time.deltaTime);
         }
         else
         {
-            if(playerDistance > aIStopDistance)
+            if(playerDistance <= playerMoveDistance && playerDistance > aIStopDistance)
             {
                 animator.SetBool("isAttacking", false);
-                transform.position = Vector2.MoveTowards(transform.position, activePoint.position, speed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, new Vector2(playerManager.player.transform.position.x, transform.position.y), speed * Time.deltaTime);
             }
             else
             {
-                animator.SetBool("isAttacking", true);
+                if(playerDistance > aIStopDistance)
+                {
+                    animator.SetBool("isAttacking", false);
+                    transform.position = Vector2.MoveTowards(transform.position, activePoint.position, speed * Time.deltaTime);
+                }
+                else
+                {
+                    animator.SetBool("isAttacking", true);
+                }
+                
             }
-            
-        }
-        dis = Vector2.Distance(activePoint.position, transform.position);
-        if(Vector2.Distance(activePoint.position, transform.position) <= 0.1)
-        {
-            ChangeActivePoint();
+
+            if(Vector2.Distance(activePoint.position, transform.position) <= 0.1)
+            {
+                ChangeActivePoint();
+            }
         }
 
         if(playerDistance <= attackDistance && !justDeltDamage && !isLongRange)

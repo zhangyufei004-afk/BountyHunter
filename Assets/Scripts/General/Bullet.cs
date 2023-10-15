@@ -29,6 +29,11 @@ public class Bullet : MonoBehaviour
             other.gameObject.GetComponent<BossHealth>().TakeDamage(playerDamage.Value);
         }
         
+        if(other.gameObject.tag == "Ryker")
+        {
+            other.gameObject.GetComponent<RykerHealth>().TakeDamage(playerDamage.Value);
+        }
+        
         Destroy(gameObject);
     }
 }
