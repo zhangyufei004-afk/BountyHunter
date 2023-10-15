@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7198123165831475212}
   - component: {fileID: 5034400455399363142}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 9141260368997290439}
   - component: {fileID: 9098550493660178396}
   - component: {fileID: 6732778702411722317}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: RykerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed:
     UseConstant: 1
-    ConstantVariable: 15
+    ConstantVariable: 10
     Variable: {fileID: 0}
   rb: {fileID: 6732778702411722317}
   playerDamage:
@@ -158,7 +158,7 @@ MonoBehaviour:
     Variable: {fileID: 0}
   enemyDamage:
     UseConstant: 1
-    ConstantVariable: 2
+    ConstantVariable: 1
     Variable: {fileID: 0}
 --- !u!50 &6732778702411722317
 Rigidbody2D:

@@ -52,6 +52,8 @@ public class RykerShoot : MonoBehaviour
         if(ammo >= 0)
         {
             animator.SetTrigger("Attack");
+            yield return new WaitForEndOfFrame();
+            animator.ResetTrigger("Attack");
             yield return new WaitForSeconds(timeToWait);
             StartCoroutine(ShootBullet(timeToWait));
         }
