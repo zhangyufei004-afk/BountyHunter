@@ -7,12 +7,13 @@ public class BossStats : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public float fallSpeed = 2;
+    public bool isFlying = false;
 
     void Update()
     {
-        if(!isGrounded())
+        if(!isGrounded() && !isFlying)
         {
-            // Fall();
+            Fall();
         }
     }
     
