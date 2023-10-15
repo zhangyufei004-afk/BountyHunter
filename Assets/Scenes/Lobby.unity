@@ -8736,7 +8736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statToUpdate: {fileID: 11400000, guid: 7b2e1eb0e54660e42a5e21248dea2936, type: 2}
-  amountToUpdate: 2
+  amountToUpdate: 1
 --- !u!1 &1510331116
 GameObject:
   m_ObjectHideFlags: 0
@@ -9012,7 +9012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statToUpdate: {fileID: 11400000, guid: ce3c3913896d6e7498674951f1cbc920, type: 2}
-  amountToUpdate: 0
+  amountToUpdate: 1
 --- !u!1 &1535714281
 GameObject:
   m_ObjectHideFlags: 0
