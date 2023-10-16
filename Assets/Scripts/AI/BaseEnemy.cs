@@ -21,7 +21,7 @@ public class BaseEnemy : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         currentHealth = maxHealth;
         isBossEnemy = gameObject.GetComponent<EnemyBehavior>().isBossBattle;
-        isBossEnemy = gameObject.GetComponent<EnemyBehavior>().isTalonEnemy;
+        isTalonEnemy = gameObject.GetComponent<EnemyBehavior>().isTalonEnemy;
     }
 
     // Update is called once per frame

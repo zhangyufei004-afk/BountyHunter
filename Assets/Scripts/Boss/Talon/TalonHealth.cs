@@ -9,11 +9,13 @@ public class TalonHealth : MonoBehaviour
     public GameObject healthBar;
     public Image bar;
     private float currentHealth;
-    [SerializeField] private float maxHealth = 15;
+    [SerializeField] private float maxHealth = 36;
     public GameObject objective;
     public bool isInvulnerable = false;
     public GameObject[] enemySpawnPoints;
+    public GameObject[] bulletSpawn;
     public float downTime = 12;
+    public float damageTaken = 0;
 
 
     void Start()
@@ -48,6 +50,7 @@ public class TalonHealth : MonoBehaviour
         if(!isInvulnerable)
         {
             currentHealth -= damage;
+            damageTaken++;
         }
     }
 
@@ -60,6 +63,11 @@ public class TalonHealth : MonoBehaviour
     public void StartTimer()
     {
         StartCoroutine(TimeDowned());
+    }
+
+    public void StopTimer()
+    {
+        StopCoroutine(TimeDowned());
     }
 
     public IEnumerator TimeDowned()

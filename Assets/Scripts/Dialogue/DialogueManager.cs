@@ -4,6 +4,7 @@ using Ink.Runtime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class DialogueManager : MonoBehaviour
     private const string LAYOUT_TAG = "layout";
     private const string MOVEMENT_TAG = "movement";
     private const string TRIGGER_TAG = "trigger";
+    private const string CHANGE_SCENE_TAG = "scene";
+
 
     
 
@@ -175,13 +178,19 @@ public class DialogueManager : MonoBehaviour
                 case MOVEMENT_TAG:
                     if(tagValue == "locked")
                     {
-                        PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = false;
-                        PlayerManager.instance.player.GetComponent<Shoot>().canMove = false;
+                        if(PlayerManager.instance != null)
+                        {
+                            PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = false;
+                            PlayerManager.instance.player.GetComponent<Shoot>().canMove = false;
+                        }
                     }
                     else
                     {
-                        PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = true;
-                        PlayerManager.instance.player.GetComponent<Shoot>().canMove = true;
+                        if(PlayerManager.instance != null)
+                        {
+                            PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = true;
+                            PlayerManager.instance.player.GetComponent<Shoot>().canMove = true;
+                        }
                     }
                     break;
                 case TRIGGER_TAG:
@@ -194,6 +203,12 @@ public class DialogueManager : MonoBehaviour
                     {
                         triggeredByObject = false;
                         continueIcon.SetActive(true);
+                    }
+                    break;
+                case CHANGE_SCENE_TAG:
+                    if(tagValue == "lobby")
+                    {
+                        SceneManager.LoadScene("Lobby");
                     }
                     break;
                 default:

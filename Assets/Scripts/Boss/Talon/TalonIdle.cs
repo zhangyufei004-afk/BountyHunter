@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class TalonIdle : StateMachineBehaviour
 {
+    public GameObject bulletPrefab;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
+        foreach(GameObject spawn in animator.GetComponent<TalonHealth>().bulletSpawn)
+        {
+            Instantiate(bulletPrefab, spawn.transform.position, spawn.transform.rotation);
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

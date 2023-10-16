@@ -2234,6 +2234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJSON: {fileID: 4900000, guid: a361ce485f4c8d2428375c609513c5b7, type: 3}
   activatedOnce: 1
+  startOnSceneOpen: 0
 --- !u!61 &451226037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6324,7 +6325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1324054677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6339,6 +6340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJSON: {fileID: 4900000, guid: 2e8a88ba01c17bc4e94e5ef6770f8006, type: 3}
   activatedOnce: 1
+  startOnSceneOpen: 0
 --- !u!61 &1324054678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6555,6 +6557,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   fallSpeed: 2
+  isFlying: 0
 --- !u!212 &1360576706
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7322,7 +7325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a18d3d512e03f3444960f1af1816a8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winMenu: {fileID: 1495806891}
+  currentLevel: {fileID: 11400000, guid: 0746d8da934e6a648916e6ad3687b2c8, type: 2}
+  nextLevel: {fileID: 11400000, guid: f9ad640640d7aa64286f31a0d1fa2cca, type: 2}
+  nextScene: Huxley defeated
 --- !u!58 &1471058883
 CircleCollider2D:
   m_ObjectHideFlags: 0
