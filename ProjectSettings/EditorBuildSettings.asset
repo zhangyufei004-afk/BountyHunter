@@ -14,4 +14,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1 prototype.unity
     guid: 309b48cf7877258489f13ded7af1882e
+  - enabled: 1
+    path: Assets/Scenes/Level 2 prototype.unity
+    guid: 5be77aa0885e20147bb7f51c5aeb34da
+  - enabled: 1
+    path: Assets/Scenes/Level 3 prototype.unity
+    guid: 6d80390cd35799048928e0ea2760cc1d
+  - enabled: 1
+    path: Assets/Scenes/Level 4 prototype.unity
+    guid: a642943d07449494f948e494b6693a7d
+  - enabled: 1
+    path: Assets/Scenes/Level 5 Prototype.unity
+    guid: fed66088939c9584f98d4b6e4a6bc29c
+  - enabled: 1
+    path: Assets/Scenes/Level 6 prototype.unity
+    guid: e8139189766b3074480b6788490dd622
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Bounty collection.unity
+    guid: 0acbdeb53d9c0294db3c48a9433dce76
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Cara's shop.unity
+    guid: 52e19f2b99aacb34b878a494cc8e3bce
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Huxley defeated.unity
+    guid: 5cd1dc2f6d730164eacdf92c11ffcd74
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Ryker Daugter.unity
+    guid: 2c2f6314c22cb724696707296e5bc40d
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Ryker Team up.unity
+    guid: c98d85b127ffd54409fd07e71e1a6cbe
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Talon's death.unity
+    guid: 1de26fddf850c5846a4f9dbfa715631e
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Talon's meeting.unity
+    guid: b00833cf8b8da154dbef75d89765996b
   m_configObjects: {}

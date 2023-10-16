@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class DialogueManager : MonoBehaviour
     private const string MOVEMENT_TAG = "movement";
     private const string TRIGGER_TAG = "trigger";
     private const string CHANGE_SCENE_TAG = "scene";
+    private const string VISIBILITY_TAG = "visiblity";
 
 
     
@@ -206,13 +208,20 @@ public class DialogueManager : MonoBehaviour
                     }
                     break;
                 case CHANGE_SCENE_TAG:
-                    if(tagValue == "lobby")
+                    SceneManager.LoadScene(tagValue);
+                    break;
+                case VISIBILITY_TAG:
+                    if(tagValue == "visible")
                     {
-                        SceneManager.LoadScene("Lobby");
+                        dialoguePanel.SetActive(true);
+                    }
+                    else if(tagValue == "invisible")
+                    {
+                        dialoguePanel.SetActive(false);
                     }
                     break;
                 default:
-                    Debug.LogWarning("Tag came in but is not currently being handled");
+                    Debug.LogWarning("Tag came in but is not currently being handled: " + tagKey);
                     break;
             }
         }
