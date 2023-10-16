@@ -203,7 +203,7 @@ MonoBehaviour:
   playerMoveDistance: 5
   aIStopDistance: 4.2
   attackDistance: 4.2
-  attackSpeed: 2
+  attackSpeed: 0.5
   isLongRange: 1
   isFacingRight: 1
   enemyDamage:
@@ -211,6 +211,8 @@ MonoBehaviour:
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
   animator: {fileID: 8854303657986550890}
+  isBossBattle: 0
+  isTalonEnemy: 0
   points:
   - {fileID: 0}
   - {fileID: 0}

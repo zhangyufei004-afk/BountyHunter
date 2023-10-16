@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956c9a178ec68084caab2374cfb8a340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  maxHealth: 5
   currentHealth: 0
   coins: {fileID: 7989704420286237754, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
   hitSound: {fileID: 2269837083784208432}
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f0b02d3d2c14e44be255ebbdb192cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 7
   playerMoveDistance: 5
   aIStopDistance: 1.5
   attackDistance: 1.5
@@ -177,6 +177,8 @@ MonoBehaviour:
     ConstantVariable: 0
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
   animator: {fileID: 5445914143699964427}
+  isBossBattle: 0
+  isTalonEnemy: 0
   points:
   - {fileID: 0}
   - {fileID: 0}
