@@ -24,6 +24,11 @@ public class MenuUI : MonoBehaviour
     public ShopTimesBought tbRealoadSpeed;
 
     public SceneChange levelOne;
+    public SceneChange levelTwo;
+    public SceneChange levelThree;
+    public SceneChange levelFour;
+    public SceneChange levelFive;
+    public SceneChange levelSix;
 
     public void StartButton()
     {
@@ -46,6 +51,18 @@ public class MenuUI : MonoBehaviour
         tbRealoadSpeed.TimesShopped = 0;
 
         levelOne.LevelActive = true;
+        levelTwo.LevelActive = false;
+        levelThree.LevelActive = false;
+        levelFour.LevelActive = false;
+        levelFive.LevelActive = false;
+        levelSix.LevelActive = false;
+
+        levelOne.LevelCompleted = false;
+        levelTwo.LevelCompleted = false;
+        levelThree.LevelCompleted = false;
+        levelFour.LevelCompleted = false;
+        levelFive.LevelCompleted = false;
+        levelSix.LevelCompleted = false;
 
         SceneManager.LoadScene("Lobby");
     }

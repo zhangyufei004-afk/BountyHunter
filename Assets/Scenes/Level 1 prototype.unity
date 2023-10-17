@@ -2202,7 +2202,7 @@ GameObject:
   - component: {fileID: 451226035}
   - component: {fileID: 451226037}
   - component: {fileID: 451226036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerStartDia2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5690,7 +5690,7 @@ AudioSource:
   m_GameObject: {fileID: 1103724110}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 794703482169423686, guid: 212bb109e85fb1642b8160744aa62ae8, type: 2}
   m_audioClip: {fileID: 8300000, guid: 6444f7d97c562d64b83dc2b72275bd3d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
@@ -6067,7 +6067,7 @@ GameObject:
   - component: {fileID: 1212186155}
   - component: {fileID: 1212186157}
   - component: {fileID: 1212186156}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trigger (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6323,7 +6323,7 @@ GameObject:
   - component: {fileID: 1324054679}
   - component: {fileID: 1324054678}
   - component: {fileID: 1324054677}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6562,6 +6562,7 @@ MonoBehaviour:
     m_Bits: 64
   fallSpeed: 2
   isFlying: 0
+  isTalon: 0
 --- !u!212 &1360576706
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7957,7 +7958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1589523667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DialogueTriggers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65225,7 +65226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b445ba6f66307240a515136fdf6d6a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typingSpeed: 0.02
+  typingSpeed: 0.04
   dialoguePanel: {fileID: 2069767419}
   continueIcon: {fileID: 1126567408}
   dialogueText: {fileID: 1651770173}
@@ -348347,7 +348348,7 @@ GameObject:
   - component: {fileID: 1950464595}
   - component: {fileID: 1950464597}
   - component: {fileID: 1950464596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trigger (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349296,7 +349297,7 @@ GameObject:
   - component: {fileID: 2084190710}
   - component: {fileID: 2084190712}
   - component: {fileID: 2084190711}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

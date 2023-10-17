@@ -544,6 +544,11 @@ MonoBehaviour:
   tbMovementSpeed: {fileID: 11400000, guid: d1f67a5ccb9da284e8a9cbecdc8728e9, type: 2}
   tbRealoadSpeed: {fileID: 11400000, guid: ceaa1b8e0a1ee1d478c9df905c76a97c, type: 2}
   levelOne: {fileID: 11400000, guid: 0746d8da934e6a648916e6ad3687b2c8, type: 2}
+  levelTwo: {fileID: 11400000, guid: f9ad640640d7aa64286f31a0d1fa2cca, type: 2}
+  levelThree: {fileID: 11400000, guid: b3593d956e3d5fe4e8846225821ef482, type: 2}
+  levelFour: {fileID: 11400000, guid: d467ccf9c6521254c9d9c8041c4c7d29, type: 2}
+  levelFive: {fileID: 11400000, guid: f8bab1ed736d1394792a2c9ff37589fe, type: 2}
+  levelSix: {fileID: 11400000, guid: 05b4104fa45869c4587fd03f74f1df29, type: 2}
 --- !u!1 &724438434
 GameObject:
   m_ObjectHideFlags: 0

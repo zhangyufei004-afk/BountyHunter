@@ -17,7 +17,10 @@ public class Objective : MonoBehaviour
         {
             currentLevel.LevelCompleted = true;
             nextLevel.LevelActive = true;
-            SceneManager.LoadScene(nextScene);
+            if(nextScene != "")
+            {
+                SceneManager.LoadScene(nextScene);
+            }
         }
     }
 }

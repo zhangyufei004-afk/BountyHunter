@@ -1,1 +1,1 @@
-F: Okay. This is it. Talon should be somewhere around here. Good luck Ace. #speaker: Flair #portrait: flair #layout: right #trigger: object
+Okay. This is it. Talon should be somewhere around here. Good luck Ace. #speaker: Flair #portrait: flair #layout: right #trigger: object

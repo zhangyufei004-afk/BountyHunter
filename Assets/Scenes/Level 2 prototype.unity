@@ -1063,7 +1063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86902603}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DialogueTriggers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2238,7 +2238,7 @@ AudioSource:
   m_GameObject: {fileID: 251495406}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 794703482169423686, guid: 212bb109e85fb1642b8160744aa62ae8, type: 2}
   m_audioClip: {fileID: 8300000, guid: e9f1a147dd9fa414091ec85d17ec9d0c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
@@ -4385,7 +4385,7 @@ GameObject:
   - component: {fileID: 590837646}
   - component: {fileID: 590837647}
   - component: {fileID: 590837648}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerContinue (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197214,7 +197214,7 @@ GameObject:
   - component: {fileID: 932227913}
   - component: {fileID: 932227914}
   - component: {fileID: 932227915}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerContinue (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198488,7 +198488,7 @@ GameObject:
   - component: {fileID: 1128745512}
   - component: {fileID: 1128745513}
   - component: {fileID: 1128745514}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerContinue (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199392,6 +199392,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7989704420286237749, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
   m_PrefabInstance: {fileID: 1260611979}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1263102041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263102044}
+  - component: {fileID: 1263102043}
+  - component: {fileID: 1263102042}
+  m_Layer: 0
+  m_Name: Objective
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1263102042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263102041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18d3d512e03f3444960f1af1816a8b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: {fileID: 11400000, guid: f9ad640640d7aa64286f31a0d1fa2cca, type: 2}
+  nextLevel: {fileID: 11400000, guid: b3593d956e3d5fe4e8846225821ef482, type: 2}
+  nextScene: 
+--- !u!61 &1263102043
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263102041}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 11.28}
+  m_EdgeRadius: 0
+--- !u!4 &1263102044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263102041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 515.87, y: 22.48, z: 9.778829}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1278216404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8854303657986550884, guid: 46d818715be05c145ae17012229a0a69, type: 3}
@@ -199973,7 +200047,7 @@ GameObject:
   - component: {fileID: 1325389507}
   - component: {fileID: 1325389508}
   - component: {fileID: 1325389509}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200831,7 +200905,7 @@ GameObject:
   - component: {fileID: 1509933599}
   - component: {fileID: 1509933601}
   - component: {fileID: 1509933600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerContinue (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201513,7 +201587,7 @@ GameObject:
   - component: {fileID: 1600194711}
   - component: {fileID: 1600194713}
   - component: {fileID: 1600194712}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerContinue (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201965,7 +202039,7 @@ GameObject:
   - component: {fileID: 1640466083}
   - component: {fileID: 1640466084}
   - component: {fileID: 1640466085}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerContinue (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202489,7 +202563,7 @@ GameObject:
   - component: {fileID: 1661083324}
   - component: {fileID: 1661083325}
   - component: {fileID: 1661083326}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TriggerStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
