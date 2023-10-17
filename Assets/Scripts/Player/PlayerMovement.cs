@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -21,10 +22,19 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource footsteps;
     public AudioSource jumpSound;
 
+    // private bool canDash = true;
+    // public bool isDashing;
+    // public float dashPower = 24f;
+    // public float dashTime = 0.2f;
+    // public float dashCooldown = 1f;
+
+    // public TrailRenderer tr;
+
     public bool canMove = true;
 
     [Header("Input Actions References")]
     [SerializeField] private InputActionReference jumpReference;
+    // [SerializeField] private InputActionReference dashReference;
 
     void OnEnable()
     {
@@ -46,6 +56,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if(isDashing)
+        // {
+        //     return;
+        // }
+
         Flip();
 
         if(isGrounded())
@@ -59,6 +74,11 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isGrounded", false);
             animator.SetBool("isJumping", true);
         }
+
+        // if(dashReference.action.triggered && canDash)
+        // {
+        //     StartCoroutine(Dash());
+        // }
     }
 
     private void FixedUpdate()
@@ -138,4 +158,21 @@ public class PlayerMovement : MonoBehaviour
     {
         footsteps.Play();
     }
+
+    // IEnumerator Dash()
+    // {
+    //     canDash = false;
+    //     isDashing = true;
+    //     float originalGravity = rb.gravityScale;
+    //     rb.gravityScale = 0;
+    //     // rb.velocity = new Vector2(transform.localScale.x * dashPower, 0f);
+    //     rb.AddForce(transform.right * dashPower, ForceMode2D.Impulse);
+    //     tr.emitting = true;
+    //     yield return new WaitForSeconds(dashTime);
+    //     tr.emitting = false;
+    //     rb.gravityScale = originalGravity;
+    //     isDashing = false;
+    //     yield return new WaitForSeconds(dashCooldown);
+    //     canDash = true;
+    // }
 }

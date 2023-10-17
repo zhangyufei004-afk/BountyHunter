@@ -55,6 +55,10 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        // if(gameObject.GetComponent<PlayerMovement>().isDashing)
+        // {
+        //     return;
+        // }
         hurtSound.Play();
         for(int i = 0; i < damage; i++)
         {
