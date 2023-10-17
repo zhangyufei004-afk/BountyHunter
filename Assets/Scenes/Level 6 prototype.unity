@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &10778906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 10778907}
+  m_Layer: 0
+  m_Name: Point (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &10778907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10778906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 63.27, y: 31.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &24191884
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +242,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -223,7 +254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28699633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.57, y: -2.7, z: 0}
+  m_LocalPosition: {x: 52.05, y: -4.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -377,6 +408,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 504305347}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 1907612117}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (5)
@@ -427,6 +494,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+--- !u!1 &121538785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 121538786}
+  m_Layer: 0
+  m_Name: Point (23)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &121538786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121538785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37.67, y: 60.86, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &144305575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -434,6 +532,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1547079265}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 1077261263}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger
@@ -567,6 +701,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: playerMoveDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 383297588}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 694775077}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964425, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964426, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_Name
       value: TalonBrawler (7)
@@ -629,6 +791,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: playerMoveDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1657151522}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 822705086}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964425, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964426, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_Name
       value: TalonBrawler (5)
@@ -808,6 +998,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5445914143699964437, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
   m_PrefabInstance: {fileID: 188953986}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &208768981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 208768982}
+  m_Layer: 0
+  m_Name: Point (25)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &208768982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208768981}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 61.26, y: 60.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &231463369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -815,6 +1036,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1547079265}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 1077261263}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964425, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964426, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_Name
       value: TalonBrawler (3)
@@ -877,6 +1122,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 392497794}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 1263089608}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (10)
@@ -932,11 +1213,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8854303657986550884, guid: 46d818715be05c145ae17012229a0a69, type: 3}
   m_PrefabInstance: {fileID: 273376236}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &340117874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 340117875}
+  m_Layer: 0
+  m_Name: Point (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &340117875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340117874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.29, y: 25.64, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &350398687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8854303657986550884, guid: 46d818715be05c145ae17012229a0a69, type: 3}
   m_PrefabInstance: {fileID: 1171636975}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &383297588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 383297589}
+  m_Layer: 0
+  m_Name: Point (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &383297589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383297588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.26, y: 45.51, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &392497794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 392497795}
+  m_Layer: 0
+  m_Name: Point (34)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &392497795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392497794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 54.21, y: 97.72, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &397163269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 397163270}
+  m_Layer: 0
+  m_Name: Point (26)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &397163270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397163269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 72.05, y: 67.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &397243822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 397243823}
+  m_Layer: 0
+  m_Name: Point (27)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &397243823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397243822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 73.55, y: 67.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &408029085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,6 +1456,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 2010312314}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 860361433}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (9)
@@ -1082,6 +1554,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 2077743788}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 1829104739}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (3)
@@ -1144,6 +1652,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: playerMoveDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1847046508}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 1338836838}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964425, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964426, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_Name
       value: TalonBrawler (8)
@@ -1194,6 +1730,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+--- !u!1 &504305347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504305348}
+  m_Layer: 0
+  m_Name: Point (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &504305348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504305347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.9, y: 43.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &516758417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5445914143699964437, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
@@ -1346,7 +1913,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1358,7 +1925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651069973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.32, y: -2.7, z: 0}
+  m_LocalPosition: {x: 21.88, y: -4.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1517,6 +2084,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688616991}
   m_CullTransparentMesh: 1
+--- !u!1 &692108650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692108651}
+  m_Layer: 0
+  m_Name: Point (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692108651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692108650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 48.17, y: 20.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &694775077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694775078}
+  m_Layer: 0
+  m_Name: Point (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &694775078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694775077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 51.42, y: 45.51, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &698596531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5445914143699964437, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
@@ -1708,6 +2337,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807546654}
   m_CullTransparentMesh: 1
+--- !u!1 &817815795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 817815796}
+  m_Layer: 0
+  m_Name: Point (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &817815796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817815795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.09, y: 18.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &822705086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 822705087}
+  m_Layer: 0
+  m_Name: Point (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &822705087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822705086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 56.64, y: 38.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &835741189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8854303657986550884, guid: 46d818715be05c145ae17012229a0a69, type: 3}
@@ -1745,8 +2436,102 @@ Transform:
   - {fileID: 28699634}
   - {fileID: 1547079266}
   - {fileID: 1077261264}
+  - {fileID: 2052345681}
+  - {fileID: 692108651}
+  - {fileID: 1399781427}
+  - {fileID: 10778907}
+  - {fileID: 1657151523}
+  - {fileID: 822705087}
+  - {fileID: 383297589}
+  - {fileID: 694775078}
+  - {fileID: 1847046509}
+  - {fileID: 1338836839}
+  - {fileID: 1979277043}
+  - {fileID: 817815796}
+  - {fileID: 1922726968}
+  - {fileID: 340117875}
+  - {fileID: 2077743789}
+  - {fileID: 1829104740}
+  - {fileID: 504305348}
+  - {fileID: 1907612118}
+  - {fileID: 1908211473}
+  - {fileID: 121538786}
+  - {fileID: 2076344883}
+  - {fileID: 208768982}
+  - {fileID: 397163270}
+  - {fileID: 397243823}
+  - {fileID: 1506136114}
+  - {fileID: 964970566}
+  - {fileID: 1244218628}
+  - {fileID: 1965514816}
+  - {fileID: 2010312315}
+  - {fileID: 860361434}
+  - {fileID: 392497795}
+  - {fileID: 1263089609}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &860361433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 860361434}
+  m_Layer: 0
+  m_Name: Point (33)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &860361434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860361433}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.77, y: 97.66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &964970565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 964970566}
+  m_Layer: 0
+  m_Name: Point (29)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &964970566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964970565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 56.33, y: 83.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &989370549
 PrefabInstance:
@@ -1755,6 +2540,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1506136113}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 964970565}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (12)
@@ -1817,6 +2638,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: playerMoveDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 651069973}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 28699633}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964425, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964426, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_Name
       value: TalonBrawler
@@ -1827,7 +2676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964437, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.161034
+      value: -7.31
       objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964437, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1958,6 +2807,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1244218627}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 1965514815}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (11)
@@ -2020,7 +2905,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2032,7 +2917,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077261263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.57, y: 3.8, z: 0}
+  m_LocalPosition: {x: 73.23, y: 12.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2078,6 +2963,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 2052345680}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 692108650}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (7)
@@ -2377,6 +3286,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1908211472}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 121538785}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (2)
@@ -2432,6 +3377,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8854303657986550884, guid: 46d818715be05c145ae17012229a0a69, type: 3}
   m_PrefabInstance: {fileID: 144305575}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1244218627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244218628}
+  m_Layer: 0
+  m_Name: Point (30)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244218628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244218627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.754, y: 83.197, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1263089608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263089609}
+  m_Layer: 0
+  m_Name: Point (35)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263089609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263089608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 56.32, y: 97.72, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1280624117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,6 +3522,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1399781426}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 10778906}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964425, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964426, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_Name
       value: TalonBrawler (4)
@@ -2641,6 +3672,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293323814}
   m_CullTransparentMesh: 1
+--- !u!1 &1338836838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1338836839}
+  m_Layer: 0
+  m_Name: Point (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1338836839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338836838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.89, y: 43.72, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1399781426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1399781427}
+  m_Layer: 0
+  m_Name: Point (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1399781427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399781426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37.85, y: 31.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1471199814 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5445914143699964437, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
@@ -2653,6 +3746,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: playerMoveDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 2076344882}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 208768981}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964425, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964426, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_Name
       value: TalonBrawler (6)
@@ -2703,6 +3824,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+--- !u!1 &1506136113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1506136114}
+  m_Layer: 0
+  m_Name: Point (28)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1506136114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506136113}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 54.22, y: 83.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1506522882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2710,6 +3862,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1979277042}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 817815795}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (8)
@@ -2772,7 +3948,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2784,7 +3960,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547079265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.32, y: 3.8, z: 0}
+  m_LocalPosition: {x: 53.88, y: 12.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3157,6 +4333,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8854303657986550884, guid: 46d818715be05c145ae17012229a0a69, type: 3}
   m_PrefabInstance: {fileID: 1857977451}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1657151522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1657151523}
+  m_Layer: 0
+  m_Name: Point (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1657151523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657151522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.51, y: 38.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1676319073
 GameObject:
   m_ObjectHideFlags: 0
@@ -51394,6 +52601,68 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1829104739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1829104740}
+  m_Layer: 0
+  m_Name: Point (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1829104740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829104739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.34, y: 33.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1847046508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1847046509}
+  m_Layer: 0
+  m_Name: Point (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1847046509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847046508}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.16, y: 43.72, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1855636540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51401,6 +52670,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1922726967}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 340117874}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (4)
@@ -51458,6 +52763,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1399781426}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 10778906}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (1)
@@ -51515,6 +52856,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: aIStopDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 397163269}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 397243822}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (13)
@@ -106115,11 +107492,135 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1907612117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1907612118}
+  m_Layer: 0
+  m_Name: Point (21)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1907612118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907612117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.26999936, y: 43.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1908211472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1908211473}
+  m_Layer: 0
+  m_Name: Point (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1908211473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908211472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.15, y: 60.86, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1922726967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1922726968}
+  m_Layer: 0
+  m_Name: Point (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1922726968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922726967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.879999, y: 25.64, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1938035276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8854303657986550884, guid: 46d818715be05c145ae17012229a0a69, type: 3}
   m_PrefabInstance: {fileID: 989370549}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1965514815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965514816}
+  m_Layer: 0
+  m_Name: Point (31)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1965514816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965514815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.864002, y: 83.197, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1973993379
 GameObject:
   m_ObjectHideFlags: 0
@@ -106196,6 +107697,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973993379}
   m_CullTransparentMesh: 1
+--- !u!1 &1979277042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979277043}
+  m_Layer: 0
+  m_Name: Point (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1979277043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979277042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.3, y: 18.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1995083986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106203,6 +107735,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: playerMoveDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 651069973}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 28699633}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964425, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964426, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_Name
       value: TalonBrawler (2)
@@ -106258,6 +107818,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8854303657986550884, guid: 46d818715be05c145ae17012229a0a69, type: 3}
   m_PrefabInstance: {fileID: 1506522882}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2010312314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2010312315}
+  m_Layer: 0
+  m_Name: Point (32)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2010312315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010312314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.66, y: 97.66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2017684153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106265,6 +107856,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: playerMoveDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 651069973}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 28699633}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964424, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445914143699964425, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5445914143699964426, guid: 978b2965c3fae7a48bc35ff19a237be9, type: 3}
       propertyPath: m_Name
       value: TalonBrawler (1)
@@ -106398,6 +108017,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614173702}
     m_Modifications:
+    - target: {fileID: 8854303657986550880, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: maxHealth
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: attackSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: playerMoveDistance
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 2052345680}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 692108650}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854303657986550881, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+      propertyPath: enemyDamage.ConstantVariable
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8854303657986550882, guid: 46d818715be05c145ae17012229a0a69, type: 3}
       propertyPath: m_Name
       value: TalonRanger (6)
@@ -106448,6 +108095,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46d818715be05c145ae17012229a0a69, type: 3}
+--- !u!1 &2052345680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2052345681}
+  m_Layer: 0
+  m_Name: Point (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2052345681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052345680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 40.19, y: 20.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2071151874
 GameObject:
   m_ObjectHideFlags: 0
@@ -106524,6 +108202,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071151874}
   m_CullTransparentMesh: 1
+--- !u!1 &2076344882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076344883}
+  m_Layer: 0
+  m_Name: Point (24)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2076344883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076344882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 51.37, y: 60.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2077743788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2077743789}
+  m_Layer: 0
+  m_Name: Point (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2077743789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077743788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.8299994, y: 33.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848185516}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2142478499
 GameObject:
   m_ObjectHideFlags: 0
