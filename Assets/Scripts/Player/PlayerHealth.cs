@@ -81,6 +81,16 @@ public class PlayerHealth : MonoBehaviour
         TakeDamage(1);
     }
 
+    public void ResetHealth()
+    {
+        health = maxHealth;
+        for(int i = 0; i < heartsUI.Length; i++)
+        {
+            heartsUI[i].SetActive(false);
+        }
+        heartsUI[health].SetActive(true);
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Barrier")

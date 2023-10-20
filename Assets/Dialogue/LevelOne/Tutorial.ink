@@ -1,5 +1,5 @@
 Ok Ace, Huxley should be just on the other side of the compound! #speaker: Flair #portrait: flair #layout: right #movement: locked #trigger: player
-Looks like he's got alot of his mercenaries protecting him, can You help out? #speaker: Ace #portrait: ace #layout: left
+Looks like he's got alot of his mercenaries protecting him, can you help out? #speaker: Ace #portrait: ace #layout: left
 Sure! You remember how this works? #speaker: Flair #portrait: flair #layout: right
 Yeah yeah of course, just run me through it again won’t ya? #speaker: Ace #portrait: ace #layout: left
 A bit rusty aye? Ok here we go… Listen up because I’m only gonna remind you once! #speaker: Flair #portrait: flair #layout: right

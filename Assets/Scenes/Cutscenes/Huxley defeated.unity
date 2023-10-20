@@ -56886,6 +56886,7 @@ MonoBehaviour:
   displayNameText: {fileID: 1331624853}
   portraitAnimator: {fileID: 340390784}
   submitReference: {fileID: -308016745671280264, guid: 0ad0230a93c870a478dac60aca03b60a, type: 3}
+  exitReference: {fileID: -2105888180762210114, guid: 0ad0230a93c870a478dac60aca03b60a, type: 3}
 --- !u!4 &1923945347
 Transform:
   m_ObjectHideFlags: 0

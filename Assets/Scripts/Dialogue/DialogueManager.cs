@@ -23,11 +23,16 @@ public class DialogueManager : MonoBehaviour
 
     private bool canContinueToNextLine = false;
     private bool triggeredByObject = false;
+    private bool canSkip = false;
+    private bool submitSkip = false;
+    private bool canExit = false;
+    
 
     private Coroutine displayLineCoroutine;
 
     private static DialogueManager instance;
     public InputActionReference submitReference;
+    public InputActionReference exitReference;
 
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
@@ -66,6 +71,18 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
+        if(exitReference.action.triggered && canExit)
+        {
+            List<string> tags = new List<string> {"movement: unlocked"};
+            HandleTags(tags);
+            StartCoroutine(ExitDialogueMode());
+        }
+
+        if(submitReference.action.triggered)
+        {
+            submitSkip = true;
+        }
+
         if(!isPlayingDialogue)
         {
             return;
@@ -117,26 +134,30 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator DisplayLine(string line)
     {
-        dialogueText.text = "";
+        dialogueText.text = line;
+        dialogueText.maxVisibleCharacters = 0;
 
         continueIcon.SetActive(false);
 
+        submitSkip = false;
+        canSkip = false;
         canContinueToNextLine = false;
+
+        StartCoroutine(CanSkip());
 
         bool isAddingRichTextTag = false;
 
         foreach(char letter in line.ToCharArray())
         {
-            // if(submitReference.action.triggered)
-            // {
-            //     dialogueText.text = line;
-            //     break;
-            // }
+            if(submitSkip && canSkip)
+            {
+                dialogueText.maxVisibleCharacters = line.Length;
+                break;
+            }
 
             if(letter == '<' || isAddingRichTextTag)
             {
                 isAddingRichTextTag = true;
-                dialogueText.text += letter;
                 if(letter == '>')
                 {
                     isAddingRichTextTag = false;
@@ -144,13 +165,15 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
-                dialogueText.text += letter;
+                dialogueText.maxVisibleCharacters++;
                 yield return new WaitForSeconds(typingSpeed);
             }
 
         }   
-
-        continueIcon.SetActive(true);
+        if(!triggeredByObject)
+        {
+            continueIcon.SetActive(true);
+        }
         canContinueToNextLine = true;
     }
 
@@ -182,6 +205,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         if(PlayerManager.instance != null)
                         {
+                            canExit = true;
                             PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = false;
                             PlayerManager.instance.player.GetComponent<Shoot>().canMove = false;
                         }
@@ -190,6 +214,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         if(PlayerManager.instance != null)
                         {
+                            canExit = false;
                             PlayerManager.instance.player.GetComponent<PlayerMovement>().canMove = true;
                             PlayerManager.instance.player.GetComponent<Shoot>().canMove = true;
                         }
@@ -226,4 +251,12 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
+    IEnumerator CanSkip()
+    {
+        canSkip = false;
+        yield return new WaitForSeconds(0.05f);
+        canSkip = true;
+    }
+
 }

@@ -8,16 +8,18 @@ public class Shoot : MonoBehaviour
     public GameObject firePoint;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private AudioSource shootSound;
+    [SerializeField] private AudioSource reloadSound;
 
 
     [Header("UI")]
     public GameObject[] bulletUI;
 
     [Header("Variables")]
-    private int ammo = 8;
+    public int ammo = 8;
     public int maxAmmo = 8;
     public FloatReference reloadSpeed;
     private bool isReloading;
+    public bool isShooting;
 
     [Header("Input Actions")]
     public InputActionReference shootReference;
@@ -40,6 +42,7 @@ public class Shoot : MonoBehaviour
     void Start()
     {
         isReloading = false;
+        isShooting = false;
         ammo = maxAmmo;
         for(int i = 0; i < bulletUI.Length; i++)
         {
@@ -54,6 +57,17 @@ public class Shoot : MonoBehaviour
         {
             if(ammo > 0 && !isReloading)
             {
+                Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation);
+                shootSound.Play();
+                bulletUI[ammo].SetActive(false);
+                ammo--;
+                bulletUI[ammo].SetActive(true);
+            }
+            else if(ammo > 1 && isReloading)
+            {
+                isShooting = true;
+                StopCoroutine(ReloadTime());
+                isReloading = false;
                 Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation);
                 shootSound.Play();
                 bulletUI[ammo].SetActive(false);
@@ -81,9 +95,15 @@ public class Shoot : MonoBehaviour
     IEnumerator ReloadTime()
     {
         isReloading = true;
+        isShooting = false;
         
         while(ammo < maxAmmo)
         {
+            if(isShooting)
+            {
+                break;
+            }
+            reloadSound.Play();
             bulletUI[ammo].SetActive(false);
             ammo++;
             bulletUI[ammo].SetActive(true);

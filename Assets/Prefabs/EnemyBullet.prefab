@@ -137,9 +137,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed:
-    UseConstant: 0
-    ConstantVariable: 0
-    Variable: {fileID: 11400000, guid: d13c65a8ec162fa498faa848cc1b663d, type: 2}
+    UseConstant: 1
+    ConstantVariable: 15
+    Variable: {fileID: 0}
   rb: {fileID: 8882099484465713198}
   playerDamage:
     UseConstant: 0
