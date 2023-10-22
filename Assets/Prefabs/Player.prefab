@@ -377,6 +377,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 21a87deb-01e9-48be-8034-c2c593f2fd2f
     m_ActionName: Player/TakeDamageTest[/Keyboard/rightCtrl,/Keyboard/leftShift,/Keyboard/b]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 50846a18-691a-42c5-8df0-c39c7437b6af
+    m_ActionName: Player/Continue[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2483ea09-be91-45fa-ab77-70df8ec9db8f
+    m_ActionName: Player/Dash[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b34523c3-41b4-4996-b573-216b4d871a84
+    m_ActionName: Player/Exit[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
