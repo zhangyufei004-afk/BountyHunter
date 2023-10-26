@@ -16,6 +16,8 @@ public class BossHealth : MonoBehaviour
     [SerializeField] private int leapFreq = 3;
     private float timeUntilLeap = 0;
     public GameObject objective;
+    public AudioSource jump;
+    public AudioSource groundSlam;
 
 
     void Start()
@@ -41,6 +43,7 @@ public class BossHealth : MonoBehaviour
 
         if(timeUntilLeap >= leapFreq)
         {
+            jump.Play();
             animator.SetTrigger("Leap");
             animator.SetBool("Leaping", true);
             StartCoroutine(LeapWait());
@@ -67,6 +70,7 @@ public class BossHealth : MonoBehaviour
 
     private void Die()
     {
+        GameManager.instance.enemyDeathSound.Play();
         objective.SetActive(true);
         Destroy(gameObject);
     }

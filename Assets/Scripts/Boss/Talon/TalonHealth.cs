@@ -56,6 +56,7 @@ public class TalonHealth : MonoBehaviour
 
     private void Die()
     {
+        GameManager.instance.enemyDeathSound.Play();
         objective.SetActive(true);
         Destroy(gameObject);
     }

@@ -10,6 +10,8 @@ public class RykerShoot : MonoBehaviour
     public GameObject[] enemySpawnPoints;
     public GameObject[] teleportLocations;
     private Animator animator;
+    public AudioSource attackSound;
+    public AudioSource teleportSound;
     // [SerializeField] private AudioSource shootSound;
 
     [Header("Variables")]
@@ -26,7 +28,7 @@ public class RykerShoot : MonoBehaviour
     {
         if(ammo > 0)
         {
-            // shootSound.Play();
+            attackSound.Play();
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             ammo--;
         }
@@ -38,6 +40,7 @@ public class RykerShoot : MonoBehaviour
 
     private void Reload()
     {
+        teleportSound.Play();
         animator.SetTrigger("Teleport");
         ammo = maxAmmo;
     }

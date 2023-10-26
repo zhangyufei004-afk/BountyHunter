@@ -12,6 +12,7 @@ public class BossSlam : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        animator.gameObject.GetComponent<BossHealth>().groundSlam.Play();
         boss = animator.gameObject;
         GameObject shockLeft = Instantiate(shockWavePrefab, new Vector3(boss.transform.position.x + 0.4f, boss.transform.position.y - .15f, 0), quaternion.identity);
         GameObject shockRight = Instantiate(shockWavePrefab, new Vector3(boss.transform.position.x - 0.4f, boss.transform.position.y - .15f, 0), quaternion.identity);

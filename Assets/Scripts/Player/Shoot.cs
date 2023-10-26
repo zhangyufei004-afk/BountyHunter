@@ -53,7 +53,7 @@ public class Shoot : MonoBehaviour
 
     private void ShootBullet(InputAction.CallbackContext context)
     {
-        if(canMove)
+        if(canMove && !gameObject.GetComponent<PlayerHealth>().isDead)
         {
             if(ammo > 0 && !isReloading)
             {

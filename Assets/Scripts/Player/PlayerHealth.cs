@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 6;
     public GameObject spawnpoint;
     public AudioSource hurtSound;
+    public AudioSource heartSound;
+    public bool isDead;
 
     [Header("UI")]
     public GameObject[] heartsUI;
@@ -30,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
+        isDead = false;
         health = maxHealth;
         gameOverPanel.SetActive(false);
         for(int i = 0; i < heartsUI.Length; i++)
@@ -50,11 +53,16 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        isDead = true;
         gameOverPanel.SetActive(true);
     }
 
     public void TakeDamage(float damage)
     {
+        if(gameObject.GetComponent<PlayerHealth>().isDead)
+        {
+            return;
+        }
         // if(gameObject.GetComponent<PlayerMovement>().isDashing)
         // {
         //     return;
@@ -84,6 +92,7 @@ public class PlayerHealth : MonoBehaviour
     public void ResetHealth()
     {
         health = maxHealth;
+        heartSound.Play();
         for(int i = 0; i < heartsUI.Length; i++)
         {
             heartsUI[i].SetActive(false);
@@ -95,6 +104,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(other.gameObject.tag == "Barrier")
         {
+            StartCoroutine(DialogueManager.GetInstance().ExitDialogueMode());
             gameObject.transform.position = spawnpoint.transform.position;
             TakeDamage(1);
         }

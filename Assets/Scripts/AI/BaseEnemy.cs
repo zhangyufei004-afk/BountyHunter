@@ -50,8 +50,9 @@ public class BaseEnemy : MonoBehaviour
         spriteRenderer.color = Color.white;
     }
 
-    private void Die()
+    public void Die()
     {
+        GameManager.instance.enemyDeathSound.Play();
         if(isBossEnemy && isTalonEnemy)
         {
             GameObject.FindWithTag("Talon").GetComponent<Animator>().GetBehaviour<TalonFloating>().enemiesKilled -= 1;

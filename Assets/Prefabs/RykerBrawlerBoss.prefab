@@ -153,6 +153,7 @@ MonoBehaviour:
   currentHealth: 0
   coins: {fileID: 7989704420286237754, guid: 761ef7e15fabe21439673abf12bdb9e6, type: 3}
   hitSound: {fileID: 2269837083784208432}
+  deathSound: {fileID: 0}
 --- !u!114 &5445914143699964424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +179,7 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: 7a058fb01681baf4baee4e95f81aa75a, type: 2}
   animator: {fileID: 5445914143699964427}
   isBossBattle: 1
+  isTalonEnemy: 0
   points:
   - {fileID: 0}
   - {fileID: 0}

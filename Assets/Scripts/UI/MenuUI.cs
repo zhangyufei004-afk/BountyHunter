@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuUI : MonoBehaviour
 {
+    [Header("GameObjects")]
+    public GameObject menu;
+    public GameObject credits;
+    public Animator creditAnimator;
+
+    [Header("Scriptable Objects")]
     public Money money;
     public FloatVariable enemyDamage; 
     public FloatVariable abilityRecharge;
@@ -29,6 +35,12 @@ public class MenuUI : MonoBehaviour
     public SceneChange levelFour;
     public SceneChange levelFive;
     public SceneChange levelSix;
+
+    void Start()
+    {
+        menu.SetActive(true);
+        credits.SetActive(false);
+    }
 
     public void StartButton()
     {
@@ -70,5 +82,19 @@ public class MenuUI : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
+    }
+
+    public void OnCreditButton()
+    {
+        credits.SetActive(true);
+        creditAnimator.SetTrigger("CreditStart");
+        menu.SetActive(false);
+    }
+
+    public void OnBackButton()
+    {
+        creditAnimator.ResetTrigger("CreditStart");
+        credits.SetActive(false);
+        menu.SetActive(true);
     }
 }

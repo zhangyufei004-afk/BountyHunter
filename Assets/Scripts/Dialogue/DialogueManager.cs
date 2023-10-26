@@ -107,7 +107,7 @@ public class DialogueManager : MonoBehaviour
         ContinueStory();
     }
 
-    IEnumerator ExitDialogueMode()
+    public IEnumerator ExitDialogueMode()
     {
         yield return new WaitForSeconds(0.2f);
         isPlayingDialogue = false;

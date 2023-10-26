@@ -10,6 +10,7 @@ public class BossAttack : MonoBehaviour
     public FloatReference bossDamage;
     public GameObject attackPoint;
     public float attackArea = 4f;
+    public AudioSource attack;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,11 @@ public class BossAttack : MonoBehaviour
             Debug.Log("Damaged Player");
             playerManager.player.GetComponent<PlayerHealth>().TakeDamage(bossDamage.Value);
         }
+    }
+    
+    public void PlaySound()
+    {
+        attack.Play();
     }
 
     void OnDrawGizmosSelected()
