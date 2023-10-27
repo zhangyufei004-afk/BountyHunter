@@ -65,7 +65,7 @@ public class BaseEnemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void DieWithoutCoins()
+    public void DieWithoutCoins()
     {
         if(isBossEnemy && isTalonEnemy)
         {
