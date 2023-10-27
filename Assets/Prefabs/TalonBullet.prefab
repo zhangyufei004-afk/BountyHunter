@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6240865878699694593}
   - component: {fileID: 8882099484465713198}
   - component: {fileID: 7265554377582068123}
-  - component: {fileID: 7150487257465286023}
+  - component: {fileID: 6041536621800015279}
   m_Layer: 13
   m_Name: TalonBullet
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5213965994690874903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.8284, y: 1.1358, z: 0}
-  m_LocalScale: {x: 31.346354, y: 22.71475, z: 0}
+  m_LocalScale: {x: 12, y: 12, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,10 +131,10 @@ MonoBehaviour:
     Variable: {fileID: 0}
   enemyDamage:
     UseConstant: 1
-    ConstantVariable: 2
+    ConstantVariable: 1
     Variable: {fileID: 0}
---- !u!58 &7150487257465286023
-CircleCollider2D:
+--- !u!70 &6041536621800015279
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -147,5 +147,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.02
+  m_Size: {x: 0.08, y: 0.04}
+  m_Direction: 1
