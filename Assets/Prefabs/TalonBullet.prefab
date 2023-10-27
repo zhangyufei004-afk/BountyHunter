@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5213965994690874903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.8284, y: 1.1358, z: 0}
-  m_LocalScale: {x: 7.2911997, y: 7.2911997, z: 0}
+  m_LocalScale: {x: 31.346354, y: 22.71475, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
     Variable: {fileID: 0}
   enemyDamage:
     UseConstant: 1
-    ConstantVariable: 1
+    ConstantVariable: 2
     Variable: {fileID: 0}
 --- !u!58 &7150487257465286023
 CircleCollider2D:
@@ -148,4 +148,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.04
+  m_Radius: 0.02
