@@ -50,7 +50,7 @@ public class TalonHealth : MonoBehaviour
         if(!isInvulnerable)
         {
             currentHealth -= damage;
-            damageTaken++;
+            damageTaken += damage;
         }
     }
 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8882099484465713198}
   - component: {fileID: 7265554377582068123}
   - component: {fileID: 7150487257465286023}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: TalonBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

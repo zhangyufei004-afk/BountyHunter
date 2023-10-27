@@ -7,7 +7,6 @@ public class PlayerHealth : MonoBehaviour
     [Header("Variables")]
     public int health;
     public int maxHealth = 6;
-    public GameObject spawnpoint;
     public AudioSource hurtSound;
     public AudioSource heartSound;
     public bool isDead;
@@ -105,7 +104,7 @@ public class PlayerHealth : MonoBehaviour
         if(other.gameObject.tag == "Barrier")
         {
             StartCoroutine(DialogueManager.GetInstance().ExitDialogueMode());
-            gameObject.transform.position = spawnpoint.transform.position;
+            gameObject.transform.position = GameManager.instance.spawnPoint.position;
             TakeDamage(1);
         }
     }

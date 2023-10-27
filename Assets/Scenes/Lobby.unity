@@ -1092,10 +1092,10 @@ MonoBehaviour:
   timesBought: {fileID: 11400000, guid: 661ac396088f36a439597b932d0899fd, type: 2}
   cost:
   - 2
-  - 4
-  - 6
-  - 8
+  - 5
   - 10
+  - 15
+  - 20
 --- !u!114 &142764187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3494,10 +3494,10 @@ MonoBehaviour:
   timesBought: {fileID: 11400000, guid: 4079dbf1b68f98e47af04a869cc27023, type: 2}
   cost:
   - 2
-  - 4
-  - 6
-  - 8
+  - 5
   - 10
+  - 15
+  - 20
 --- !u!114 &471298096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8719,10 +8719,10 @@ MonoBehaviour:
   timesBought: {fileID: 11400000, guid: d1f67a5ccb9da284e8a9cbecdc8728e9, type: 2}
   cost:
   - 2
-  - 4
-  - 6
-  - 8
+  - 5
   - 10
+  - 15
+  - 20
 --- !u!114 &1477015092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8995,10 +8995,10 @@ MonoBehaviour:
   timesBought: {fileID: 11400000, guid: 8e74c20adba7ae543b15af819ad15837, type: 2}
   cost:
   - 2
-  - 4
-  - 6
-  - 8
+  - 5
   - 10
+  - 15
+  - 20
 --- !u!114 &1530435600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11553,10 +11553,10 @@ MonoBehaviour:
   timesBought: {fileID: 11400000, guid: ceaa1b8e0a1ee1d478c9df905c76a97c, type: 2}
   cost:
   - 2
-  - 4
-  - 6
-  - 8
+  - 5
   - 10
+  - 15
+  - 20
 --- !u!114 &1972515720
 MonoBehaviour:
   m_ObjectHideFlags: 0

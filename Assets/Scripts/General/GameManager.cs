@@ -20,4 +20,6 @@ public class GameManager : MonoBehaviour
 
     public AudioSource enemyDeathSound;
 
+    public Transform spawnPoint;
+
 }
